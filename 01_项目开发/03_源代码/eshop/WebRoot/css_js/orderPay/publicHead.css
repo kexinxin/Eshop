@@ -1,0 +1,39 @@
+@charset "gb2312";
+/*  CSS Document 
+*   页面顶部公用导航
+*/
+
+/*public*/
+.zlogin li,.buyer_center span{ background:url(http://icon.zol-img.com.cn/zol_shop/index_2012v1/head.png) no-repeat;}
+/*topbar*/ 
+.topbar{ height:29px; background:#f5f5f5; border-bottom:1px solid #e6e6e6; color:#666; line-height:29px;}
+.topbar .wrapper {line-height:29px;}
+.znav_link{ float:left; margin-left:-10px; color:#ccc;}
+.znav_link a{ margin:0 10px; color:#666;}
+.znav_link a:hover{ color:#f60;}
+.zlogin{ float:right; color:#ccc;}
+.zlogin li{ float:left; padding:1px 10px 0; margin-left:-1px; color:#666; background-position:0 -208px; }
+.zlogin .login{ background:none;}
+.zlogin .kefu{ padding:1px 0 0 10px;}
+.zlogin em{ color:#cc0000;}
+.zlogin .login_act{ margin:0 9px 0 7px;}
+.help_center{ color:#666;}
+.zlogin .buyer_center{ padding:1px 0 0; padding:0\0; position:relative;  z-index:1002;}
+.buyer_center span{ display:inline-block; padding-right:12px; margin:0 10px; background-position:100% -135px; color:#666; cursor:pointer;}
+.zlogin .cur{ padding:0; background:#fff;}
+.zlogin .cur span{ padding:0 21px 0 9px; margin:0 0 -1px; position:relative; height:29px; line-height:29px; border:1px solid #bababa; border-bottom:0 none; z-index:2; background-color:#fff; background-position:100% -155px;}
+.buyer_center_list{ display:none; width:93px; padding:3px; position:absolute; top:29px; right:0; border:1px solid #bababa; background:#fff;}
+.buyer_center_list a{ display:block; width:86px; height:26px; padding-left:7px; line-height:26px; color:#666;}
+.buyer_center_list a:hover{ background:#ececec; color:#666; text-decoration:none;}
+.zlogin .buyer_center a,.zlogin .buyer_center a:hover{ color:#666; text-decoration:none;}
+.zlogin .cur .buyer_center_list{ display:block;}
+/* 积分兑换弹层 */
+.exchange-layer .close,.exchange-layer p,.exchange-layer .ico{ background:url(http://icon.zol-img.com.cn/newshop/shop/mall-bg.png) no-repeat;}
+.exchange-layer{ position:absolute; top:34px; left:-84px; padding:10px 15px; width:207px; border:1px solid #f9dea9; background:#fffcf0;}
+.exchange-layer .close{ position:absolute; top:0; right:0; margin:0; padding:0; width:21px; height:21px; font:0/0 arial; background-position:0 0; cursor:pointer;}
+.exchange-layer p{ padding:0 0 0 22px; background-position:-9px -37px; font:14px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color:#333;}
+.zlogin .exchange-layer a{ display:inline-block; margin:6px 0 0; color:#134ba0;}
+.zlogin .exchange-layer a:hover{ color:#c00;}
+.exchange-layer .ico{ position:absolute; top:-5px; left:50%; margin:0 0 0 -3px; width:7px; height:5px; background-position:-14px -21px; font:0/0 arial;}
+.zlogin .login{ position:relative; z-index:10;}
+.zlogin .login .exchange-layer{ left:41px;}

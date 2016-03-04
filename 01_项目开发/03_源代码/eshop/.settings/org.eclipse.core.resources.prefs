@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebRoot/WEB-INF/jsp/admin/adminOrderManage.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/cart/cart.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/order/orderConfirm.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/order/orderInfo.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/order/orderManage.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/order/orderPay.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/order/payFinish.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/product/main.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/product/productInfo.jsp=UTF-8

@@ -1,0 +1,173 @@
+/*
+@Description: 商城积分
+@author: 李月
+@update: 2014-01-26
+*/
+.prize,.exchange-table .btn,.layerbox-body .error,.layerbox-body .correct,.screening .search,.draw-btn,.have-draw-btn,.z-beans,.my-grades em,.level-bar i,.grades-icon i,.ellipsis{ background:url(http://icon.zol-img.com.cn/newshop/my/ico.png) no-repeat;}
+
+/* 积分兑换 */
+.exchange{ padding:15px 20px 20px;}
+.exchange .title h3{ float:left; font:20px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";}
+.exchange .title .links{ float:right; font:12px/28px "Simsun";}
+
+.exchange-table{ padding:17px 0 0;}
+.exchange-table table{ width:100%; border-collapse:collapse; border:1px solid #e2e2e2;}
+.exchange-table th{ padding:0 10px; height:32px; border-bottom:1px solid #e2e2e2; background:#f5f5f5; font:12px/32px "Arial";}
+.exchange-table td{ padding:15px 10px; border-bottom:1px solid #e2e2e2; text-align:center; font:12px/20px "Arial";}
+.exchange-table .cell-1{ width:170px;}
+.exchange-table .cell-2{ width:101px;}
+.exchange-table .cell-3{ width:205px;}
+.exchange-table .cell-4{ width:76px;}
+.exchange-table .cell-5{ width:135px;}
+
+.prize{ margin:0 0 0 5px; width:160px; height:80px; background-position:0 0;}
+.prize span{ float:left; padding:15px 0 0 5px; width:27px; height:65px; overflow:hidden; color:#fff1c8; font:14px/16px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";}
+.prize h3{ float:left; padding:13px 10px 13px 15px; width:103px; height:54px; overflow:hidden; font:14px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; text-align:left; color:#630;}
+.exchange-table .cell-2 p{ padding:0 0 0 10px; text-align:left;}
+.exchange-table .cell-2 em{ font-weight:bold; color:#f00;}
+.exchange-table .cell-3 p{ padding:0 18px; text-align:left;}
+.exchange-table .cell-4 em{ font-weight:bold; color:#f00;}
+.exchange-table .btn,.exchange-table .btn-over,.exchange-table .btn-bind{ display:block; margin:0 auto; width:75px; height:28px; font:12px/28px "Arial"; text-align:center; color:#fff; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
+.exchange-table .btn{ background:#0f6cd5;}
+.exchange-table .btn:hover{ background:#2d86eb; color:#fff; text-decoration:none;}
+.exchange-table .btn-over{ background:#e6e6e6; color:#999;}
+.exchange-table .btn-bind{ width:73px; height:26px; border:1px solid #b2d1f5; background:#ddedff; color:#0f6cd5;}
+
+.exchange-tfoot{ padding:15px 0 0;}
+.rule-links{ float:left; padding:0 10px; height:30px; border:1px solid #fbe3c7; background:#fcfbee;}
+.rule-links a{ font:12px/30px "Simsun";}
+.exchange-tfoot .page-num{ float:right; padding:0;}
+
+/* 查看密码弹层 */
+.ticket-password h3{ padding:0 0 20px; font:14px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";}
+.ticket-password p em{ font-weight:bold; color:#f00;}
+.ticket-password p a{ margin:0 0 0 10px;}
+.ticket-password .layerbox-title{ padding:0;}
+.ticket-password .layerbox-button-false{ margin:0; cursor:pointer; color:#999;}
+.ticket-password .layerbox-button-false:hover{ color:#999;}
+.ticket-password .btn-bind{ display:inline-block; width:73px; height:26px; border:1px solid #b2d1f5; background:#ddedff; color:#0f6cd5; font:12px/26px "Arial"; text-align:center; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
+
+/* 积分冻结弹层 */
+.ticket-freeze .layerbox-body{ text-align:left;}
+.ticket-freeze .layerbox-body p{ padding:10px 0 0 45px;}
+.layerbox-body p em{ font-weight:bold; color:#f00;}
+.layerbox-body .error,.layerbox-body .correct{ padding:4px 0 0 45px; font:16px/30px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";}
+.layerbox-body .error{ background-position:-124px -299px;}
+.layerbox-body .correct{ background-position:-124px -216px;}
+
+/* 兑换成功 */
+.ticket-correct .layerbox-body{ text-align:left;}
+.ticket-correct p{ padding:0 0 0 45px;}
+.ticket-correct .has-change{ position:relative; zoom:1; padding:0 0 0 105px;}
+.has-change .title{ position:absolute; top:4px; left:45px;}
+.has-change .infor{ font:14px/26px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";}
+.ticket-correct .total{ padding:25px 0 15px 45px; color:#666;}
+.ticket-correct .total em{ padding:0 5px;}
+
+/* 积分变动历史 */
+.screening{ padding:15px 0 0;}
+.screening dl{ float:left; padding:0 10px 0 0;}
+.screening dt,.screening dd{ float:left;}
+.screening dt{ font:14px/28px "Arial"; color:#666;}
+.screening .selectbox{ width:102px;}
+.screening .selectbox input{ width:80px; padding:2px 15px 2px 5px; background-position:100% -719px;}
+.screening .selectbox ul{ width:100px; top:28px;}
+.screening .times input{ float:left; width:67px; height:26px; line-height:26px; border:1px solid #e2e2e2;}
+.screening .times span{ float:left; padding:0 5px; color:#d9d9d9; line-height:28px; font-family:simsun;}
+.screening .search{ float:left; margin:0 0 0 10px; width:77px; height:28px; border:0 none; background-position:0 -189px; cursor:pointer;}
+
+.exchange-change{ padding:17px 0 0;}
+.exchange-change table{ width:100%; border-collapse:collapse; border:1px solid #e2e2e2;}
+.exchange-change th{ padding:0 10px; height:32px; border-bottom:1px solid #e2e2e2; background:#f5f5f5; font:12px/32px "Arial";}
+.exchange-change td{ padding:15px 10px; border-bottom:1px solid #e2e2e2; text-align:center; font:12px/20px "Arial";}
+.exchange-change .cell-1{ padding:0 0 0 25px; width:75px;}
+.exchange-change .cell-2{ width:120px;}
+.exchange-change .cell-3{ width:315px;}
+.exchange-change .cell-4{ width:190px;}
+.exchange-change td.cell-3{ text-align:left;}
+.exchange-change .decrease{ font-weight:bold; color:#f00;}
+.exchange-change .increase{ font-weight:bold; color:#390;}
+.exchange-change .freeze{ font-weight:bold;}
+.exchange-change td a{ margin:0 0 0 10px;}
+
+/* 首页 累计 */
+.grand-total{ padding:0 0 12px;}
+.grand-total li{ padding:10px 0 5px; height:35px; font:14px/35px arial; color:#ccc;}
+.grand-total .label{ color:#333;}
+.grand-total a{ margin:0 10px 0 0;}
+.grand-total .price{ font-size:16px; color:#c00;}
+.grand-total .price em{ font-size:22px;}
+.grand-total .point{ color:#333; font-weight:bold;}
+.draw-btn,.have-draw-btn{ display:inline-block; width:128px; height:35px; background-position:0 -81px; color:#fff; text-align:center;}
+.draw-btn:hover{ background-position:0 -117px; color:#fff; text-decoration:none;}
+.have-draw-btn{ margin:0 10px 0 0; background-position:0 -153px; color:#999;}
+
+/* 我的试用 */
+.trial{ padding:15px 20px 20px;}
+.trial .title h3{ float:left; font:20px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";}
+.trial-table{ padding:17px 0 0;}
+.trial-table table{ width:100%; border-collapse:collapse; border:1px solid #e2e2e2;}
+.trial-table th{ padding:0 10px; height:32px; border-bottom:1px solid #e2e2e2; background:#f5f5f5; font:12px/32px "Arial";}
+.trial-table td{ padding:15px 10px; border-bottom:1px solid #e2e2e2; text-align:center; font:12px/20px "Arial";}
+.trial-table .cell-1{ width:250px;}
+.trial-table .cell-2{ width:150px;}
+.trial-table .cell-3{ width:90px;}
+.trial-table .cell-4{ width:217px;}
+.trial-table .pic{ float:left; width:100px; height:62px;}
+.trial-table .pic img{ display:block;}
+.trial-table h3{ float:left; padding:10px 0 0 10px; width:140px; font:12px/20px "Arial"; text-align:left;}
+.trial-table .cell-4 a{ margin:0 5px;}
+.trial-layer .layerbox-body{ font-size:14px;}
+.trial-layer .times{ font-weight:bold; color:#f60;}
+.trial-reason  .layerbox-body{ font-size:12px; text-align:left;}
+
+/* 等级 */
+.z-beans{ padding:0 0 0 20px; background-position:-144px -103px;}
+.grades{ padding:10px 12px; border:1px solid #fbe3c7; background:#fcfbee;}
+.grades .title{ float:left; font:12px/20px "Arial";}
+.my-grades{ float:left; width:40px;}
+.my-grades em{ display:block; width:40px; height:18px; text-indent:-9999em; overflow:hidden;}
+.my-grades .v-0{ background-position:0 -386px;}
+.my-grades .v-1{ background-position:-41px -386px;}
+.my-grades .v-2{ background-position:0 -405px;}
+.my-grades .v-3{ background-position:-41px -405px;}
+.my-grades .v-4{ background-position:0 -424px;}
+.my-grades .v-5{ background-position:-41px -424px;}
+.my-grades .v-6{ background-position:0 -443px;}
+.my-grades .v-7{ background-position:-41px -443px;}
+.my-grades .v-8{ background-position:0 -462px;}
+.my-grades .v-9{ background-position:-41px -462px;}
+.grades a{ float:right; font-family:simsun;}
+.grades-bar{ margin:49px 0 6px; height:14px; border:1px solid #fbe3c7; background:#fff;}
+.level-bar{ position:relative; zoom:1; height:14px; background:#ffefe5;}
+.level-bar span{ display:none; position:absolute; top:-26px; right:0; display:block; margin:0 -25px 0 0; padding:0 7px; height:20px; font:14px/20px verdana; background:#ff9604; color:#fff;}
+.level-bar i{ position:absolute; top:20px; right:23px; display:block; width:5px; height:3px; background-position:-73px -373px; font:0/0 arial; text-indent:-9999em; overflow:hidden;}
+.grades-icon{ padding:0 0 30px;}
+.grades-icon span{ float:left; position:relative; zoom:1;}
+.grades-icon em{ position:absolute; top:27px; left:50%; display:block; margin:0 0 0 -25px; width:50px; text-align:center; color:#999;}
+.grades-icon .arrive{ margin:0 0 0 544px;}
+.grades-icon .highest{ float:right;}
+.grades-icon .highest em{ margin:0 0 0 -36px;}
+.grades-icon .ellipsis{ margin:10px 0 0 60px; width:27px; height:2px; font:0/0 arial; background-position:0 -486px;}
+.grades-icon i{ display:block; width:21px; height:21px; font:0/0 arial;}
+.grades-icon .level-icon-0{ background-position:0 -276px;}
+.grades-icon .level-icon-1{ background-position:-44px -320px;}
+.grades-icon .level-icon-2{ background-position:-66px -320px;}
+.grades-icon .level-icon-3{ background-position:0 -342px;}
+.grades-icon .level-icon-4{ background-position:-22px -342px;}
+.grades-icon .level-icon-5{ background-position:-44px -342px;}
+.grades-icon .level-icon-6{ background-position:-66px -342px;}
+.grades-icon .level-icon-7{ background-position:0 -364px;}
+.grades-icon .level-icon-8{ background-position:-22px -364px;}
+.grades-icon .level-icon-9{ background-position:-44px -364px;}
+
+.grades-icon .current .level-icon-0{ background-position:0  -276px;}
+.grades-icon .current .level-icon-1{ background-position:-22px -276px;}
+.grades-icon .current .level-icon-2{ background-position:-44px -276px;}
+.grades-icon .current .level-icon-3{ background-position:-66px -276px;}
+.grades-icon .current .level-icon-4{ background-position:0 -298px;}
+.grades-icon .current .level-icon-5{ background-position:-22px -298px;}
+.grades-icon .current .level-icon-6{ background-position:-44px -298px;}
+.grades-icon .current .level-icon-7{ background-position:-66px -298px;}
+.grades-icon .current .level-icon-8{ background-position:0 -320px;}
+.grades-icon .current .level-icon-9{ background-position:-22px -320px;}

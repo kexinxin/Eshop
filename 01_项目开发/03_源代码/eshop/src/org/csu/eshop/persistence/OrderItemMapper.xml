@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.OrderItemMapper">
+
+  <cache />
+
+<select id="getOrderItemByItemId" parameterType="int" resultType="OrderItem">
+select *
+from orderitem
+where orderitemId=#{orderItemId}
+</select>
+
+<select id="getOrderItemListByOrderId" parameterType="string" resultType="OrderItem">
+select *
+from orderitem
+where orderid=#{orderId}
+</select>
+<select id="getOrderItemListByProductId" parameterType="int" resultType="OrderItem">
+select *
+from orderitem
+where productId=#{productId}
+</select>
+
+<insert id="insertOrderItem" parameterType="OrderItem">
+insert into orderitem
+	(productId,orderid,productName,productPrice,amount,valuation,trafficCompany,attr2)
+values
+	(#{productId},#{orderId},#{productName},#{procutPrice},#{amount},#{valuation},#{trafficCompany},#{attr2})
+</insert>
+<update id="addValuation" parameterType="OrderItem">
+update orderitem set
+	valuation = #{valuation}
+where orderitemId = #{orderItemId}
+</update>
+<delete id="delectOrderItem" parameterType="string">
+delete from orderitem
+where orderId = #{orderId}
+</delete>
+</mapper>

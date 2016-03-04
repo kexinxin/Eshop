@@ -1,0 +1,88 @@
+/*
+@Description: 电商购物流程 公共头尾
+@author:liyue 
+@update: 2013-12-16
+*/
+
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {margin:0;padding:0;}
+body {font:12px/1.5 Arial; color:#333;}
+select,input,button {vertical-align:middle;font-size:100%;}
+ul,ol {list-style:none;}
+fieldset,img {border:0;}
+em {font-style:normal;}
+.clearfix:after {content:"."; display: block; visibility: hidden; clear: both; height:0; font-size:0}
+.clearfix {*zoom:1}
+
+/* global */
+a{ color:#36c; text-decoration:none;}
+a:hover{ color:#c00; text-decoration:underline;}
+.wrapper{ margin:0 auto; width:960px;}
+
+/* bg */ 
+.flow-step li{ background:url(http://icon.zol-img.com.cn/newshop/order/step-bg.png) no-repeat;}
+.zlogin li,.buyer_center span,.footer .copyright i,.zp-findmod span{ background:url(http://icon.zol-img.com.cn/newshop/shop/headfoot-ico.png) no-repeat;}
+
+/* topbar */
+.topbar{ height:29px; background:#f5f5f5; border-bottom:1px solid #e6e6e6; color:#666; line-height:29px; }
+.znav_link{ float:left; margin-left:-10px; color:#ccc; }
+.znav_link a{ margin:0 10px; color:#666; text-decoration:none; }
+.znav_link a:hover{ color:#c00; text-decoration:underline; }
+.zlogin{ float:right; color:#ccc; }
+.zlogin li{ float:left; padding:1px 10px 0; margin-left:-1px; color:#666; background-position:0 -177px; }
+.zlogin .login{ background:none; }
+.zlogin .kefu{ padding:1px 0 0 10px; }
+.zlogin em{ color:#c00; }
+.zlogin .login_act{ margin:0 9px 0 7px; }
+.zlogin a{ color:#134ba0; text-decoration:none; }
+.zlogin a:hover{ color:#c00; text-decoration:underline; }
+.help_center{ color:#666; }
+.zlogin .buyer_center{ padding:1px 0 0; padding:0\0; position:relative; z-index:26; }
+.buyer_center span{ display:inline-block; padding-right:12px; margin:0 10px; background-position:100% -34px; color:#666; cursor:pointer; }
+.zlogin .cur{ padding:0; background:#fff; }
+.zlogin .cur span{ padding:0 21px 0 9px; margin:0 0 -1px; position:relative; height:29px; line-height:29px; border:1px solid #bababa; border-bottom:0 none; z-index:2; background-color:#fff; background-position:100% -53px; }
+.buyer_center_list{ width:93px; padding:3px; position:absolute; top:29px; right:0; border:1px solid #bababa; background:#fff; }
+.buyer_center_list a{ display:block; width:86px; height:26px; padding-left:7px; line-height:26px; color:#666; }
+.buyer_center_list a:hover{ background:#ececec; color:#666; text-decoration:none; }
+.zlogin .buyer_center a,.zlogin .buyer_center a:hover{ color:#666; text-decoration:none; }
+
+/* header */
+.header{ margin:0 auto; padding:30px 0; width:960px;}
+.logo{ float:left;}
+.logo img{ display:block; float:left;}
+.logo span{ float:left; margin:8px 0 0 8px; padding:0 0 0 10px; border-left:1px solid #e6e6e6; font:14px/44px arial; color:#666; cursor:pointer; }
+
+/* flow-step */
+.flow-step{ float:right; padding:2px 0 0;}
+.flow-step li{ float:left; width:90px; padding:0 14px 0 0; background-position:100% -74px; background-color:#e6e6e6; font:14px/36px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; text-align:center;}
+.flow-step .s1{ padding:0 14px;}
+.flow-step .s5{ padding:0; background:#e6e6e6;}
+.flow-step-1 .s1{ background-position:100% -37px; background-color:#e02d2d; color:#fff;}
+.flow-step-2 .s2,.flow-step-3 .s3,.flow-step-4 .s4,.flow-step-5 .s5{ background-position:100% -37px; background-color:#e02d2d; color:#fff;}
+.flow-step-2 .s1,.flow-step-3 .s2,.flow-step-4 .s3,.flow-step-5 .s4{ background-position:100% 0; background-color:#ffcccc; color:#c00;}
+.flow-step-3 .s1,.flow-step-4 .s1,.flow-step-4 .s2,.flow-step-5 .s1,.flow-step-5 .s2,.flow-step-5 .s3{ background-position:100% -148px; background-color:#ffcccc; color:#c00;}
+
+/* footer */
+.footer{ margin:40px auto 0; padding:5px 0 20px; width:960px; text-align:center; border-top:1px solid #e3e3e3;}
+.footer .links { padding:14px 0 6px; color:#ccc; }
+.footer .links a { margin:0 10px; }
+.footer .copyright { display:inline-block; height:23px; padding-left:28px; position:relative; line-height:23px; }
+.footer .copyright i { width:23px; height:23px; position:absolute; top:0; left:0; background-position:0 0; }
+.footer p .copyright { color:#333; }
+.authentication { padding-top:12px; }
+.authentication a { vertical-align:middle; margin-right:8px; }
+.brandlist_2 { height:59px; padding-left: 2px; background:#f5f5f5; border:1px solid #e3e3e3; border-top:0 none; overflow:hidden; }
+.brandlist_2 li { float:left; margin:11px 0 11px 14px; border:1px solid #eee; display:inline;}
+.brandlist_2 li img { display:block; }
+.authentication a:hover{ text-decoration:none;}
+
+/*zp-searchbox*/
+.zp-searchbar{ float:right; margin:2px 0 0; width:416px; border:2px solid #c71010;}
+.zp-searchbg{ position:relative; z-index:4; }
+.zp-findmod{ float:left; position:relative; width:54px; height:32px; line-height:32px; background-color:#fff; }
+.zp-findmod span{ display:block; padding:0 20px 0 10px; position:relative; background-position:100% -132px; cursor:pointer; zoom:1; color:#999;}
+.zp-findmod-cur span{ background-position:100% -100px;}
+.zp-findmod ul{ width:52px; position:absolute; top:32px; left:-2px; background:#fff; border:2px solid #c71010; border-top:0 none; }
+.zp-findmod ul li{ cursor:pointer; height:28px; line-height:28px; padding-left:10px; color:#999; }
+.zp-findmod ul .hov{ background:#f5f5f5; color:#333; }
+.zp-searchtext{ float:left; width:257px; height:18px; padding:7px 10px 7px 20px; border:0 none; font:14px/18px arial;}
+.zp-searchbtn{ float:right; width:75px; height:32px; cursor:pointer; font-size:14px; line-height:32px; font-weight:bold; color:#fff; background:#c71010; border:0 none; }

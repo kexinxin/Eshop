@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.CategoryMapper">
+
+  <cache />
+
+<select id="getParentCategorytByPid" parameterType="int" resultType="Category">
+	SELECT 
+		categoryId,name,level,pid
+	FROM
+		category
+	WHERE categoryId = #{pid}
+</select>
+ 
+ <select id="getParentCategoryByCategory" parameterType="Category" resultType="Category">
+ 	SELECT categoryId,name,level,pid
+ 	FROM category
+ 	WHERE categoryId = #{category.pid}
+ </select>
+ 
+ <select id="getParentCategoryList" resultType="Category">
+ 	SELECT categoryid,name,level,pid
+ 	FROM category
+ 	WHERE level = 1
+ </select>
+
+<select id="getChildCategoryListByParentCategoryId" parameterType="int" resultType="Category">
+	SELECT categoryId,name,level,pid
+	FROM category
+	WHERE pid = #{categoryId}
+	
+</select>
+
+<select id="getChildCategoryListByParentCategory" parameterType="Category" resultType="Category">
+	SELECT categoryId,name,level,pid
+	FROM category
+	WGERE pid = #{category.categoryId}
+</select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+

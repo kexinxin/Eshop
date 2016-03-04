@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+	<package name="demo" extends="struts-default">
+
+		
+		<action name="main" class="org.csu.eshop.web.CustomerAction" method="main">
+			<result name="success">/WEB-INF/jsp/product/main.jsp</result>
+		</action>
+		
+		<action name="test" class="test.action.CustomerAction" >
+			<result name="success">/WEB-INF/jsp/order/payFinish.jsp</result>
+		</action>
+
+		<action name="addProductToCart" class="org.csu.eshop.web.CartAction"  method="addProductToCart">
+			<result name="success">/WEB-INF/jsp/cart/cart.jsp</result>
+		</action>
+		<action name="viewCart" class="org.csu.eshop.web.CartAction"  method="viewCart">
+			<result name="success">/WEB-INF/jsp/cart/cart.jsp</result>
+		</action>
+		
+		<action name="removeProductFromCart" class="org.csu.eshop.web.CartAction"  method="removeProductFromCart">
+			<result name="success">/WEB-INF/jsp/cart/cart.jsp</result>
+		</action>
+		<action name="updateCartQuantities" class="org.csu.eshop.web.CartAction"  method="updateCartQuantities">
+			<result name="success">/WEB-INF/jsp/cart/cart.jsp</result>
+		</action>
+		<action name="saveToMyAccount" class="org.csu.eshop.web.CartAction"  method="saveToMyAccount">
+			<result name="success">/WEB-INF/jsp/cart/cart.jsp</result>
+			<result name="input">/WEB-INF/jsp/account/login.jsp</result>
+		</action>
+		<action name="viewChildCategoryProductList" class="org.csu.eshop.web.ProductAction" method="viewChildCategoryProductList">
+			<result name="success">/WEB-INF/jsp/product/productList.jsp</result>
+		</action>
+		
+		<action name="viewProductByPrice" class="org.csu.eshop.web.ProductAction" method="viewProductByPrice">
+			<result name="success">/WEB-INF/jsp/product/productList.jsp</result>
+		</action>
+		<action name="searchProductListByConpany" class="org.csu.eshop.web.ProductAction" method="searchProductListByConpany">
+			<result name="success">/WEB-INF/jsp/product/productList.jsp</result>
+		</action>
+		
+		<action name="viewParentCategoryProductList" class="org.csu.eshop.web.ProductAction" method="viewParentCategoryProductList">
+			<result name="success">/WEB-INF/jsp/product/productList.jsp</result>
+		</action>
+	<action name="viewProduct" class="org.csu.eshop.web.ProductAction" method="viewProduct">
+		<result name="success">/WEB-INF/jsp/product/productInfo.jsp</result>
+	</action>
+	<action name="searchProductList" class="org.csu.eshop.web.ProductAction" method="searchProductList">
+		<result name="success">/WEB-INF/jsp/product/productList.jsp</result>
+	</action>
+	<action name="pageChange" class="org.csu.eshop.web.ProductAction" method="pageChange">
+		<result name="success">/WEB-INF/jsp/product/productList.jsp</result>
+	</action>
+	
+	
+	<action name="payOrder" class="org.csu.eshop.web.OrderAction" method="payOrder">
+		<result name="success">/WEB-INF/jsp/order/orderPay.jsp</result>
+		<result name="input">/WEB-INF/jsp/order/orderConfirm.jsp</result>
+	</action>
+	
+		<action name="confirmPayOrder" class="org.csu.eshop.web.OrderAction" method="confirmPayOrder">
+		<result name="success">/WEB-INF/jsp/product/main.jsp</result>
+	</action>
+	<action name="confirmOrder" class="org.csu.eshop.web.OrderAction"
+		method="confirmOrder">
+		<result name="success">/WEB-INF/jsp/order/orderConfirm.jsp</result>
+		<result name="input">/WEB-INF/jsp/account/login.jsp</result>
+		
+	</action>
+	
+	
+	<action name="saveProduct" class="org.csu.eshop.web.ProductAction"
+		method="saveProduct">
+		<result name="success">/WEB-INF/jsp/product/attention.jsp</result>
+		<result name="input">/WEB-INF/jsp/account/login.jsp</result>
+		<result name="error">/WEB-INF/jsp/account/login.jsp</result>
+	</action>
+	<action name="payNow" class="org.csu.eshop.web.OrderAction"
+		method="payNow">
+		<result name="success">/WEB-INF/jsp/order/orderConfirm.jsp</result>
+		<result name="input">/WEB-INF/jsp/account/login.jsp</result>
+	</action>
+	
+	
+	
+	
+	
+	<action name="intoLogin" class="org.csu.eshop.web.CustomerAction" method="intoLogin">
+		<result name="success">/WEB-INF/jsp/account/login.jsp</result>
+	</action>
+	<action name="register" class="org.csu.eshop.web.CustomerAction" method="register">
+		<result name="success">/WEB-INF/jsp/account/regist.jsp</result>
+	</action>
+	<action name="login" class="org.csu.eshop.web.CustomerAction" method="login">
+		<result name="success">/WEB-INF/jsp/product/main.jsp</result>
+		<result name="error">/WEB-INF/jsp/account/login.jsp</result>
+	</action>
+	<action name="logout" class="org.csu.eshop.web.CustomerAction" method="logout">
+		<result name="success">/WEB-INF/jsp/product/main.jsp</result>
+	</action>
+	<action name="newAccount" class="org.csu.eshop.web.CustomerAction" method="newAccount">
+		<result name="success">/WEB-INF/jsp/product/main.jsp</result>
+		<result name="error">/WEB-INF/jsp/account/regist.jsp</result>
+	</action>
+	<action name="viewMyAccount" class="org.csu.eshop.web.CustomerAction" method="viewMyAccount">
+		<result name="success">/WEB-INF/jsp/account/personInfo.jsp</result>
+		<result name="error">/WEB-INF/jsp/account/login.jsp</result>
+	</action>
+	<action name="changeInfo" class="org.csu.eshop.web.CustomerAction" method="changeInfo">
+		<result name="success">/WEB-INF/jsp/account/personInfo.jsp</result>
+	</action>
+	<action name="passwordReset" class="org.csu.eshop.web.CustomerAction" method="passwordReset">
+		<result name="success">/WEB-INF/jsp/account/personInfo.jsp</result>
+		<result name="error">/WEB-INF/jsp/account/passwordReset.jsp</result>
+	</action>
+	<action name="viewMySaveItem" class="org.csu.eshop.web.CustomerAction" method="viewMySaveItem">
+		<result name="success">/WEB-INF/jsp/product/attention.jsp</result>
+		<result name="error">/WEB-INF/jsp/account/login.jsp</result>
+	</action>
+	
+	<action name="deleteMySaveItem" class="org.csu.eshop.web.CustomerAction" method="deleteMySaveItem">
+		<result name="success">/WEB-INF/jsp/product/attention.jsp</result>
+	</action>
+	
+	<action name="viewOrder" class="org.csu.eshop.web.OrderAction" method="viewOrder">
+		<result name="success">/WEB-INF/jsp/order/orderManage.jsp</result>
+		<result name="error">/WEB-INF/jsp/account/login.jsp</result>
+	</action>
+	
+	<action name="payFinish" class="org.csu.eshop.web.OrderAction" method="payFinish">
+		<result name="success">/WEB-INF/jsp/order/payFinish.jsp</result>
+	</action>
+	
+	<action name="viewOrderInfo" class="org.csu.eshop.web.OrderAction" method="viewOrderInfo">
+		<result name="success">/WEB-INF/jsp/order/orderInfo.jsp</result>
+	</action>
+	<action name="rePayOrder" class="org.csu.eshop.web.OrderAction" method="rePayOrder">
+		<result name="success">/WEB-INF/jsp/order/orderPay.jsp</result>
+	</action>
+	<action name="confirmReceive" class="org.csu.eshop.web.OrderAction" method="confirmReceive">
+		<result name="success">/WEB-INF/jsp/order/orderManage.jsp</result>
+	</action>
+	<action name="addValuation" class="org.csu.eshop.web.OrderAction" method="addValuation">
+		<result name="success">/WEB-INF/jsp/order/valuatOrder.jsp</result>
+	</action>
+	<action name="insertToDB" class="org.csu.eshop.web.OrderAction" method="insertToDB">
+		<result name="success">/WEB-INF/jsp/order/orderManage.jsp</result>
+	</action>
+	<action name="intoValuationList" class="org.csu.eshop.web.OrderAction" method="intoValuationList">
+		<result name="success">/WEB-INF/jsp/order/valuatOrderList.jsp</result>
+	</action>
+	<action name="intoAdminOrderManage" class="org.csu.eshop.web.AdminAction" method="intoAdminOrderManage">
+		<result name="success">/WEB-INF/jsp/admin/adminOrderManage.jsp</result>
+	</action>
+	<action name="delectOrder" class="org.csu.eshop.web.AdminAction" method="delectOrder">
+		<result name="success">/WEB-INF/jsp/admin/adminOrderManage.jsp</result>
+	</action>
+	<action name="diliverProduct" class="org.csu.eshop.web.AdminAction" method="diliverProduct">
+		<result name="success">/WEB-INF/jsp/admin/adminOrderManage.jsp</result>
+	</action>
+	
+	
+	<action name="viewAllAccount" class="org.csu.eshop.web.AdminAction" method="viewAllAccount">
+		<result name="success">/WEB-INF/jsp/admin/accountManage.jsp</result>
+	</action>
+	<action name="deleteAccount" class="org.csu.eshop.web.AdminAction" method="deleteAccount">
+		<result name="success">/WEB-INF/jsp/admin/accountManage.jsp</result>
+	</action>
+	<action name="intoUpload_addProduct" class="org.csu.eshop.web.AdminAction" method="intoUpload_addProduct">
+		<result name="success">/WEB-INF/jsp/admin/addProduct.jsp</result>
+	</action>
+	<action name="upload_addProduct" class="org.csu.eshop.web.AdminAction" method="addProduct">
+		<result name="success">/WEB-INF/jsp/admin/addProduct.jsp</result>
+	</action>
+	
+	
+	<action name="intoAdminLogin" class="org.csu.eshop.web.AdminAction" method="intoAdminLogin">
+		<result name="success">/WEB-INF/jsp/admin/adminLogin.jsp</result>
+	</action>
+	
+	<action name="intoCustomerLog" class="org.csu.eshop.web.AdminAction" method="intoCustomerLog">
+		<result name="success">/WEB-INF/jsp/admin/customerLog.jsp</result>
+	</action>
+	<action name="adminLogout" class="org.csu.eshop.web.AdminAction" method="adminLogout">
+		<result name="success">/WEB-INF/jsp/admin/adminLogin.jsp</result>
+	</action>
+	<action name="intoStateChangeLog" class="org.csu.eshop.web.AdminAction" method="intoStateChangeLog">
+		<result name="success">/WEB-INF/jsp/admin/stateChangeLog.jsp</result>
+	</action>
+	
+	
+	<action name="adminLogin" class="org.csu.eshop.web.AdminAction" method="adminLogin">
+		<result name="success">/WEB-INF/jsp/admin/addProduct.jsp</result>
+		<result name="error">/WEB-INF/jsp/admin/adminLogin.jsp</result>
+	</action>
+	
+	
+	
+	</package>
+
+
+</struts>

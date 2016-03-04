@@ -1,0 +1,37 @@
+/* 
+    Document   : feedBack
+    Created on : 2013-10-12, 17:03:09
+    Author     : zhouq
+    Description: 详情页建议反馈样式
+*/
+.survey-radio,.survey-radio i,.survey-close,.survey-submit,.survey-tip{background:url(http://icon.zol-img.com.cn/products/product2011/survey.png) no-repeat;}
+.survey-box{opacity:.3;opacity:1;width:318px;height:0;position:fixed;_position:absolute;right:0;bottom:-244px;overflow:hidden;border:1px solid #e6e6e6;background-color:#fff;box-shadow:-2px -2px 15px #ccc;-webkit-box-shadow:-2px -2px 15px #ccc;-moz-box-shadow:-2px -2px 15px #ccc;font-family:arial,'\5b8b\4f53';font-size:12px;z-index:2000;}
+.survey-ie{visibility:hidden;height:205px;right:0;bottom:0;}
+.survey-show-w3c{height:205px;opacity:1;right:0;bottom:0;-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;-webkit-transition-duration:.8s;-moz-transition-duration:.8s;-o-transition-duration:.8s;}
+.survey-hide-w3c{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;-webkit-transition-duration:.8s;-moz-transition-duration:.8s;-o-transition-duration:.8s;}
+.survey-header{width:318px;height:32px;border-bottom:1px solid #f0f0f0;line-height:32px;color:#333;}
+.survey-title{float:left;font:bold 12px/32px '\5b8b\4f53';text-indent:15px;}
+.survey-title em{color:#F60;}
+.survey-close{float:right;height:32px;width:32px;background-position:0 -53px;outline:0 none;}
+.survey-close:hover{background-position:-25px -53px;}
+.survey-main{padding:10px 15px 15px;width:290px;}
+.survey-radio{float:left;position:relative;zoom:1;width:50px;padding-left:50px;height:25px;line-height:25px;background-position:-87px -56px;cursor:pointer;}
+.survey-radio-good-sel,.survey-radio-bad-sel{background-position:-87px -81px;}
+.survey-radio i{position:absolute;left:23px;top:4px;width:21px;height:18px;}
+.survey-radio-good i{background-position:0 -115px;}
+.survey-radio-good-sel i{background-position:0 -89px;}
+.survey-radio-bad i{background-position:-26px -115px;}
+.survey-radio-bad-sel i{background-position:-26px -89px;}
+.survey-text{clear:both;width:283px;height:74px;border:1px solid #d8d7d7;margin:12px 0 0;padding:2px 0 2px 5px;resize:none;_display:inline;font-size:12px;overflow-y:auto;line-height:18px;vertical-align:top;}
+.survey-text.default{color:#999;}
+.survey-count{margin-top:10px;float:left;height:24px;line-height:24px;color:#999;}
+.survey-count-cur{color:#666;}
+.survey-count-over{color:#f60;}
+.survey-submit{float:right;border:0 none;width:49px;height:24px;margin-top:10px;text-indent:-999em;overflow:hidden;background-position:-51px -28px;cursor:pointer;}
+.survey-submit:hover{background-position:0 -28px;}
+.survey-submit-disabled,.survey-submit-disabled:hover{cursor:default;background-position:0 -145px;}
+.survey-mask{background:#eee;width:100%;height:100%;_height:205px;position:absolute;left:0;top:0;z-index:10;opacity:.5;filter:alpha(opacity=50);display:none;}
+.survey-tip{position:absolute;left:50%;top:50%;display:none;margin:-20px 0 0 -100px;padding:9px;width:180px;height:20px;line-height:20px;border:1px solid #ffc34c;background-color:#fffad6;z-index:11;text-indent:20px;opacity:.7;filter:alpha(opacity=70);}
+.survey-tip.warning{background-position:-50px -143px;}
+.survey-tip.success{background-color:#d8f1ff;background-position:-75px -106px;border-color:#6abeea;}
+#pubFeedBack{position:fixed;_position:absolute;right:15px;bottom:55px;width:54px;font-size:12px;} 

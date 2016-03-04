@@ -1,0 +1,41 @@
+/*
+@Description: 2014年商城最新吊顶
+@author: liyue
+@update: 2014-03-03
+*/
+
+
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0;}
+body{font:12px/1.5 Arial; color:#333;}
+select,input,button{vertical-align:middle;font-size:100%;}
+ul,ol{list-style:none;}
+fieldset,img{border:0;}
+em{font-style:normal;}
+.clearfix:after{content:"."; display: block; visibility: hidden; clear: both; height:0; font-size:0}
+.clearfix{*zoom:1}
+
+/* global */
+a{ color:#666; text-decoration:none;}
+a:hover{ color:#c00; text-decoration:underline;}
+.wrapper{ width:1000px; margin:0 auto;}
+
+/* bg */
+.user-about li,.user-about .cart a,.drop-down span{ background:url(http://icon.zol-img.com.cn/newshop/try/public-head.png) no-repeat;}
+
+/* topbar */
+.topbar{ background:#f6f6f6; border-bottom:1px solid #ededed; font:12px/29px "Arial";position:relative; zoom:1; z-index:10;}
+.site-about{ float:left; margin:0 0 0 -10px; color:#ccc;}
+.site-about a{ display:inline-block; margin:0 10px;}
+.user-about{ float:right; margin:0 -10px 0 0;}
+.user-about li{ float:left; margin:0 0 0 -1px; padding:0 10px; background-position:-144px -274px;}
+.user-about a{ display:inline-block;}
+.user-about .login{ background:none;}
+.user-about em{ font-weight:bold; color:#c00;}
+.user-about .cart a{ padding:0 0 0 18px;  background-position:-132px -322px;}
+.drop-down span{ display:inline-block; padding:0 14px 0 0; color:#666; background-position:100% -122px; cursor:pointer;}
+.user-about .drop-down-hover{ position:relative; zoom:1; padding:0; background:none; z-index:4;}
+.drop-down-hover .drop-down-list{ display:block;}
+.drop-down-list{ display:none; position:absolute; top:28px; left:0; width:80px; border:1px solid #e6e6e6; border-top:0 none; background:#fff;}
+.drop-down-list a{ display:block; padding:0 10px;}
+.drop-down-list a:hover{ background:#f6f6f6; color:#666; text-decoration:none;}
+.drop-down-hover span{ padding:0 23px 0 9px; height:27px; line-height:27px; border:1px solid #e6e6e6; border-bottom:0 none; background-color:#fff; background-position:100% -93px;}

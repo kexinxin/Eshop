@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.CustomerMapper">
+
+  <cache />
+
+  <select id="getCustomerByUserName" parameterType="string" resultType="Customer">
+    SELECT
+          customer.username,
+          customer.password,
+          customer.address,
+          customer.mobile,
+          customer.integrate
+    FROM  customer
+    WHERE customer.username = #{userName}
+  </select>
+  
+  
+  <select id="getCustomerByUserNameAndPassword" parameterType="Customer" resultType="Customer">
+  	SELECT
+  			customer.username,
+  			customer.password,
+  			customer.address,
+  			customer.mobile,
+  			customer.integrate
+  	FROM 	customer
+  	WHERE 	customer.username = #{username}
+			AND customer.password = #{password}  
+  </select>
+  
+  
+  <insert id="insertCustomer" parameterType="Customer">
+  	INSERT INTO CUSTOMER
+  		(username,password,address,mobile,integrate)
+  	VALUES
+  		(#{username},#{password},#{address},#{mobile},#{integrate})
+  </insert>
+  
+  <update id="updateCustomer" parameterType="Customer">
+  	UPDATE CUSTOMER SET
+  			password = #{password},
+  			address = #{address},
+  			mobile = #{mobile},
+  			integrate = #{integrate}
+  	WHERE username = #{username}
+  	
+  </update>
+  
+  <delete id="delectCustomer" parameterType="Customer">
+  	DELETE FROM CUSTOMER
+  	WHERE username = #{username}
+  </delete>
+  
+  <select id="getCustomerList" parameterType="string" resultType="Customer">
+  	SELECT 
+  		username,password,address,mobile,integrate
+  	FROM
+  		customer
+  	
+  </select>
+  
+  
+	
+</mapper>

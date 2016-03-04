@@ -1,0 +1,19 @@
+@charset "gb2312";
+/* CSS Document */
+
+.footer .copyright i,.security { background:url(http://icon.zol-img.com.cn/newshop/my/foot.png) no-repeat; }
+
+/*footer*/
+.footer { padding-bottom:33px; text-align:center; }
+.footer .links { padding:14px 0 6px; color:#ccc; }
+.footer .links a { margin:0 10px; }
+.footer .copyright { display:inline-block; height:23px; padding-left:28px; position:relative; line-height:23px; }
+.footer .copyright i { width:23px; height:23px; position:absolute; top:0; left:0; background-position:-179px -176px; }
+.footer p .copyright { color:#333; }
+.authentication { padding-top:12px; }
+.authentication a { vertical-align:middle; margin-right:8px; }
+.brandlist_2 { height:59px; padding-left: 2px; background:#f5f5f5; border:1px solid #e3e3e3; border-top:0 none; overflow:hidden; }
+.brandlist_2 li { float:left; margin:11px 0 11px 14px; border:1px solid #eee; display:inline;}
+.brandlist_2 li img { display:block; }
+.authentication a:hover{ text-decoration:none;}
+

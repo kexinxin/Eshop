@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.AdminMapper">
+
+  <cache />
+
+<select id="getAdminByUserNameAndPassword" parameterType="Admin" resultType="Admin">
+	SELECT 
+		adminname,password,mobile,address
+	FROM admin
+	WHERE adminname = #{adminName}
+	AND password = #{passWord}
+</select>
+  
+
+</mapper>

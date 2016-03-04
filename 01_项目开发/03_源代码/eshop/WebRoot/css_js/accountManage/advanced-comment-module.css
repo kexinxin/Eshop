@@ -1,0 +1,100 @@
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0;}
+ul,ol{list-style:none;}
+body{font:12px/1.5 Arial; -webkit-text-size-adjust: none;}
+select,input,button{vertical-align:middle;font-size:100%;}
+fieldset,img{border:0 none;}
+em{font-style:normal;}
+.clear {clear:both;display:block;height:0; visibility:hidden; font:0/0 arial}
+.clearfix:after {content:"."; display: block; height: 0; clear: both; visibility: hidden; font-size:0}    
+.clearfix {*zoom:1} 
+
+/* background */
+.star, .star em, #advanced-window-close, .advanced-star div, .advanced-window-pic a, .icon-arrow,.upload-pic-del,
+.advanced-window-submit button,#upload-box-close, .icon-uparrow {background: url(http://icon.zol-img.com.cn/newshop/my/comment-for-mall.png) no-repeat}
+
+/* 高级点评弹层 */
+#advancedWindow {position: absolute; left: 50%; margin:0 0 0 -325px; z-index: 100000}
+.advanced-window {background:rgba(0,0,0,0.2); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#33000000,endcolorstr=#33000000,gradientType=1); padding: 5px; width:650px}
+:root .advanced-window {filter:none}
+.advanced-window-inner {background:#fff; padding:12px 25px; position:relative;zoom:1}
+.advanced-window-inner h3 {padding:8px 0; height:22px; border-bottom:1px solid #e1e1e1; font:18px/22px 'Microsoft YaHei',arial}
+#advanced-window-close {position:absolute; right:20px; top:18px; width:21px; height:21px; background-position:-92px -1px; cursor:pointer; text-indent:-9999em; overflow:hidden}
+
+/* 选择已购买，显示购买的详细资料 */
+.advanced-window .buyed-detail {padding:10px 0; position: relative; z-index: 9}
+.advanced-window .buyed-item {float:left; width:220px; height:24px; margin:5px 0 0}
+.advanced-window .buyed-product, .advanced-window .buyed-date {width:375px}
+.buyed-item strong {float:left; color:#666; line-height:24px; font-weight:normal}
+.buyed-item span {float:left; line-height:24px; height:24px; overflow:hidden}
+.buyed-item input {float:left; padding:3px 5px; height:18px; line-height:18px; border:0 none; outline:0 none; font-family:arial;color:#333; cursor:text}
+.buyed-product input {width:270px}
+.buyed-item .year {width:30px}
+.buyed-item .month {width:18px; margin-right:5px; text-align:center}
+.label-year {margin:0 5px}
+#buyProPriceAdv {padding:0 5px}
+.buyed-city input {width:140px; white-space:nowrap}
+
+/* comments-score */
+.advanced-window-score {margin-top:10px; zoom:1}
+.advanced-window-score h4 {font:bold 14px/2 arial}
+.advanced-window-score .single-score {padding:0; margin-top:8px}
+.advanced-window-score .score-item {float:left; padding:0 0 0 32px; width:362px}
+.advanced-window-score .score-item li {float:left; padding-left:6px; width:175px; height:24px; overflow:hidden; zoom:1; font:12px/2 arial}
+.advanced-window-score .score-item strong {float:left; font-weight:normal; width:56px; color:#666;}
+.advanced-window-score .single-score .line {float:left; width:2px; height:60px; margin:6px 46px 0 0; border-right:1px dotted #e1e1e1}
+
+.advanced-window-score .single-score-total {float:left; width:150px}
+.advanced-window-score .single-score-total .score {height:40px; line-height:40px; overflow:hidden}
+.advanced-window-score .single-score-total .score strong {margin:0 5px 0 0; font-size:30px; font-family:verdana; font-weight:normal; color:#f60}
+.advanced-window-score .single-score-total .score span {position:relative; top:-2px; color:#999}
+.advanced-window-score .single-score-total .star {float:left; width:108px; height:20px; margin-top:4px; background-position:0 -183px}
+.advanced-window-score .single-score-total .star em {float:left; height:20px; background-position:0 -205px}
+.advanced-window-score .score strong {margin-right:4px;color:#ccc}
+.advanced-window-score .score strong b {font-weight:normal; color:#f60}
+.advanced-star {float:left; margin:4px 0 0}
+.advanced-star div {float:left; width:14px; height: 15px; overflow: hidden; cursor: pointer; background-position:0 -150px}
+.advanced-star .active{background-position:0 -166px;}
+
+/* 优缺点 */
+.advanced-window-post p {height:24px; line-height:24px; color:#999}
+.advanced-window-post p strong {font-size:14px; color:#333}
+.advanced-window-post p em {color:#f60}
+.advanced-window-item {margin:15px 0 0; padding:0 0 5px 38px; position:relative; zoom:1}
+.advanced-window-item strong {position:absolute; left:0; top:0; height:30px; font:12px/30px arial}
+.advanced-window-item input {display:block; width:540px; height:18px; line-height:18px; font-family:arial; padding:5px 10px; border:1px solid #dbdbdb; color:#ccc}
+.advanced-window-item textarea {display:block; resize:none; width:540px; height:42px; line-height:18px; font-family:arial; padding:5px 10px; border:1px solid #dbdbdb; color:#ccc; overflow-y:auto}
+.advanced-window-item .focus {color:#333}
+
+/* 提交按钮 */
+.advanced-window-submit {padding:25px 0 15px; text-align:center}
+.advanced-window-submit button {display:block; border:0 none; width:85px; height:30px; margin:0 auto; vertical-align:top; background-position:0 -50px; text-indent:-9999em; overflow:hidden; cursor:pointer}
+.advanced-window-submit button:hover {background-position: 0 -81px}
+
+/* 图片上传 */
+.advanced-window-pic {margin:20px 0 0; height:24px; line-height:24px}
+.advanced-window-pic a {float:left; width:91px; height:24px; background-position:0 0; text-indent:-9999em; overflow:hidden}
+.advanced-window-pic a:hover {background-position:0 -25px}
+.advanced-window-pic span {float:left; position:relative; color:#999; padding-left:8px}
+
+.pic-upload-box {position:absolute; left:0; top:0; background:rgba(0,0,0,0.15); padding:3px; width:472px; visibility: hidden}
+.pic-upload-inner {position:relative; zoom:1; background:#fff; border:1px solid #ccc}
+#upload-box-close {position:absolute; right:10px; top:5px; width:21px; height:21px; text-indent:-9999em; overflow:hidden; background-position:-92px -23px; cursor:pointer}
+.pic-upload-inner h3 {height:30px; padding:0 15px; font:bold 12px/30px arial; background:#f2f2f2}
+.pic-upload-inner p {padding:10px 15px 0; height:22px; line-height:22px; color:#999}
+.pic-upload-inner p span {color:#666}
+.upload-pic-list {padding:0 0 25px 15px}
+.upload-pic-list li {position:relative; float:left; width:80px; height:60px; margin:10px 5px 0 0; padding:1px; border:1px solid #ccc; cursor:pointer;}
+.upload-pic-list .add-upload-pic {position: relative; padding:0; margin-right:0; border:2px dashed #ccc;}
+.upload-pic-list .add-upload-pic div {position: absolute; z-index: 5; left:0; top: 0; width:80px; height: 60px; opacity:0; filter:alpha(opacity=0)}
+.upload-pic-list .add-upload-pic:hover {border:2px dashed #ffa306}
+.upload-pic-list .add-upload-pic span {display:block; height:60px; font-size:40px; font-weight:bold; text-align:center; color:#ccc}
+.upload-pic-list .upload-pic-del,.upload-pic-list .progressCancel {position:absolute; right:1px; top:1px; width:20px; height:20px; background-position:-320px -183px; text-indent:-9999em; overflow:hidden}
+.upload-pic-list .upload-pic-del:hover,.upload-pic-list .progressCancel:hover {background-position:-345px -183px}
+.icon-uparrow {position:absolute; left:39px; top:-9px; width:12px; height:9px; font:0/0 arial; background-position:-96px -50px}
+.progressBarInProgress {width:80px; height: 24px; margin-top: 18px; font:12px/2 arial; text-align: center;background: url(http://icon.zol-img.com.cn/products/product2011/wtrend/loading.gif) no-repeat center center}
+.progressBarStatus {height:16px; line-height: 16px; text-align: center; color: #666}  
+
+#postSuccessTips {position:absolute; border:3px solid #e5e5e5;background:#fff; color:#666; z-index: 100001}
+#postSuccessTips .post-tips-inner {border:1px solid #dbdbdb; padding:0 10px; height:28px; text-align:center; line-height:28px;*padding:4px 0 0 0; *height: 24px; *line-height: 24px;}
+.icon-postsuc {position:relative; top:3px; display:inline-block; width:14px; height:14px; margin-right:5px; font:0/0 arial; background-position:-154px -191px}

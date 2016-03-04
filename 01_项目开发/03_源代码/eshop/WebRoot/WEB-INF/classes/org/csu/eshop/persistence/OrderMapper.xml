@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.OrderMapper">
+
+  <cache />
+
+<select id="getOrder" parameterType="string" resultType="Order">
+SELECT *
+FROM orders
+WHERE orderId = #{orderId}
+</select>
+
+<select id="getOrderByUserName" parameterType="string" resultType="Order">
+select *
+from orders
+where username = #{userName}
+</select>
+
+<insert id="insertOrder" parameterType="Order">
+insert into orders
+	(orderId,username,address,mobile,totalPrice,createTime,paymentWay,orderstateId,attr1,attr2)
+values
+	(#{orderId},#{username},#{address},#{mobile},#{tatalPrice},#{createTime},#{paymentWay},#{orderState},#{attr1},#{attr2})
+</insert>
+
+<delete id="delectOrder" parameterType="string">
+delete from orders
+where orderId = #{orderId}
+</delete>
+<delete id="delectOrderByUserName" parameterType="string">
+delete from orders
+where username = #{username}
+</delete>
+
+
+<update id="changeOrderStatus" parameterType="Order">
+update orders set
+orderstateId=#{orderState}
+where orderId = #{orderId}
+</update>
+
+<select id="getAllOrder" parameterType="string" resultType="Order">
+select *
+from orders
+</select>
+
+</mapper>

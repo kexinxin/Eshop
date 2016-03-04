@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.StateChangeLogMapper">
+
+  <cache />
+
+  
+<select id="getStateChangeLogList" resultType="StateChangeLog">
+select *
+from statechagelog
+</select>
+
+<insert id="insertStateChangeLog" parameterType="StateChangeLog">
+insert into statechagelog
+	(orderid,changeTime,event)
+values
+	(#{orderId},#{changeTime},#{event})
+</insert>
+
+<delete id="delectStateChangeLogByOrderId" parameterType="string">
+delete from statechagelog
+where orderId = #{orderId}
+</delete>
+
+</mapper>

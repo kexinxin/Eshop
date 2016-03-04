@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.ProductMapper">
+
+  <cache />
+<select id="getProductByProductId" parameterType="int" resultType="Product">
+
+select *
+from productdd
+where productId = #{productId}
+
+</select>
+  
+<select id="getProductListByCategoryId" parameterType="int" resultType="Product">
+select *
+from productdd
+where categoryId = #{categoryId}
+</select>
+
+<select id="getProductListByCategryAndCompany" parameterType="Product" resultType="Product">
+select *
+from productdd
+where categoryId in (select categoryId from category where pid=#{categoryId}) AND company=#{company}
+</select>
+
+
+<select id="searchProductByKeyWord" parameterType="string" resultType="Product">
+select *
+from productdd
+where name like #{keyWord}
+</select>
+
+<insert id="insertProduct" parameterType="Product">
+insert into productdd 
+		(productId,name,description,createTime,basePrice,marketPrice,sellPrice,
+	   	comment,clickCount,sellCount,categoryId,picture,company,qty,attr1,attr2,attr3)
+values (#{productId},#{name},#{description},#{createTime},#{basePrice},#{marketPrice},#{sellPrice},
+		#{comment},#{clickCount},#{sellCount},#{categoryId},#{picture},#{company},#{qty},#{attr1},#{attr2},#{attr3})
+	  
+</insert>
+<update id="updateProduct" parameterType="Product">
+UPDATE PRODUCTDD SET
+	productId=#{productId}
+	name=#{name}
+	description=#{description}
+	createTime=#{createTime}
+	basePrice=#{basePrice}
+	marketPrice=#{marketPrice}
+	sellPrice=#{sellPrice}
+	comment=#{comment}
+	clickCount=#{clickCount}
+	sellCount=#{sellCount}
+	categoryId=#{categoryId}
+	picture=#{picture}
+	company=#{company}
+	qty=#{qty}
+	attr1=#{attr1}
+	attr2=#{attr2}
+	attr3=#{attr3}
+WHERE productId = #{productId}
+</update>
+
+<update id="updateProductQyt" parameterType="Product">
+UPDATE PRODUCTDD SET
+	qty=#{qty}
+WHERE productId = #{productId}
+</update>
+
+<delete id="delectProductByProductId" parameterType="int">
+delete from productdd
+where productId=#{productId}
+</delete>
+
+
+
+
+
+<select id="getProductListByParentCategoryId" parameterType="int" resultType="Product">
+
+select *
+from productdd
+where categoryId in (select categoryId from category where pid=#{categoryId})
+</select>
+
+
+<select id="getProductListByCategryAndPriced" parameterType="Product" resultType="Product">
+select *
+from productdd
+where categoryId in (select categoryId from category where pid=#{categoryId}) AND 
+sellprice &lt; #{marketPrice}  AND
+sellprice &gt; #{basePrice}
+</select>
+
+</mapper>
+
+
+
+

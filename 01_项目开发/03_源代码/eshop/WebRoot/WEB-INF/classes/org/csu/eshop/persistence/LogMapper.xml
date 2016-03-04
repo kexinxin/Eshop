@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.LogMapper">
+
+  <cache />
+<select id="getLogList" resultType="Log">
+select *
+from log
+</select>
+
+<insert id="insertLog" parameterType="Log">
+insert into log
+	(username,event,time)
+values(#{username},#{event},#{time})
+</insert>
+
+<delete id="delectLogByUserName" parameterType="string">
+delete from log
+where username = #{username}
+</delete>
+
+</mapper>

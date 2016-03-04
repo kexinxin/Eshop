@@ -1,0 +1,557 @@
+@charset "gb2312";
+/* CSS Document */
+
+/*
+* @Description:  cms public css（可写中文）
+* @Author:liyue
+* @Update:(2012-06 -15 )
+*/
+
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr {margin:0;padding:0;}
+body {font:12px/1.5 Arial; color:#333;}
+select,input,button {vertical-align:middle;font-size:100%;}
+ul,ol {list-style:none;}
+fieldset,img {border:0;}
+em {font-style:normal;}
+.clearfix:after {content:"."; display: block; visibility: hidden; clear: both; height:0; font-size:0}
+.clearfix {*zoom:1}
+
+input[type="reset"]::-moz-focus-inner,input[type="button"]::-moz-focus-inner,input[type="submit"]::-moz-focus-inner,input[type="file"] > input[type="button"]::-moz-focus-inner{ border:none;padding:0;}
+
+/*global*/
+a{ color:#134ba0; text-decoration:none; cursor:pointer; }
+a:hover,.modgoods-list li a:hover,.contact-a:hover,.guide a:hover{ color:#f60; text-decoration:underline; }
+.wrapper { width:960px; margin:0 auto; }
+.mt{ margin-top:10px; }
+.mt20{ margin-top:20px;}
+
+.cart-state input,.security-a,.security-b,.security-c,.security-d,.contact-a,
+.contact-c,.remaining-time i,.deletebox i,.order-foot .accounting-btn,
+.cannotbuy-layer i,.cannotbuy-layer b,.process,.confirmbtn,.layer-hd,
+.layer-hd .closebtn,.wrong_tip,.savebtn,.cancelbtn,.order-tips i,
+.paymentbtn,.alipay,.pay-tips-icon,.pay-tip-btn,.viewbtn,.viewbtn_2,
+.logtip,.tracktip,.changebtn,.tipbox .hd,.tipbox i,.conbtn,.star,
+.star em,.evalmod label span,.goodinfor-layer .ico,
+.audit-not-pass,.audit-pass,.upload-again{ background:url(http://icon.zol-img.com.cn/newshop/merchant/telecom/pic.png) no-repeat;}
+
+/*shopcar-tip*/
+.shopcar-tip{ height:145px; padding:45px 0 12px 169px; background: url(http://icon.zol-img.com.cn/zol_shop/order/images_20120628/shopcar.png) no-repeat 60px 45px;}
+.shopcar-tip dt{ font-size:14px; font-weight:bold; color:#666; line-height:40px;}
+.shopcar-tip dd{ line-height:24px;}
+.shopcar-tip dd a{ margin:0 7px;}
+
+/*modgoods*/
+.modgoods-tab{ border-bottom:1px solid #e3e3e3;}
+.modgoods-tab li{ float:left; width:129px; height:33px; margin:0 5px 0 0; border:1px solid #e3e3e3; border-bottom:0 none; background:#f6f6f6; text-align:center; font:16px/33px "Microsoft YaHei"; cursor:pointer;}
+.modgoods-tab .cur{ margin:0 5px -1px 0; position:relative; border-top:2px solid #e02d2d; background:#fff; cursor:auto;}
+.modgoods-tabbox{ position:relative; border:1px solid #e0e0e0; border-top:0 none;}
+.modgoods-list{ padding:20px 0 13px 14px;}
+.modgoods-list li{ float:left; width:162px; padding:0 12px; text-align:center;}
+.modgoods-list li img{ display:block; border:1px solid #e2e2e2;}
+.modgoods-list li a{ color:#333;}
+.modgoods-list .pic span{ display:block; height:24px; padding:5px 0 0; line-height:24px; overflow:hidden;}
+.modgoods-list .market-price{ line-height:24px; color:#999;}
+.modgoods-list .market-price em{ font-family:Verdana; }
+.modgoods-list .price{ color:#ff0000; font-size:16px; font-family:Verdana; font-weight:bold;}
+.no-goods{ padding:20px 11px 160px 19px;}
+.no-goods span{ width:899px; height:51px; display:block;  padding:0 0 0 20px; line-height:51px; font-size:14px; background-color:#efefef;}
+
+/*cart-state*/
+.cart-state{ text-align:right;}
+.cart-state p{ padding:7px 0 10px 0;}
+.cart-state p em{ padding:0 0 0 10px; color:#666;}
+.cart-state .total{ height:22px; line-height:22px; color:#666;}
+.cart-state .total span{ float:right; padding:0 8px 0 0; line-height:24px; color:#999;}
+.cart-state .total em{ padding:0 2px 0 0; color:#ff0000; font-weight:bold; font-family:verdana; }
+.cart-state input{ float:right; width:58px; height:22px; background-position:-192px -150px; border:0 none; color:#000000;background-color:#E02D2D; line-height:22px; text-align:center; font-weight:bold; cursor:pointer;}
+
+/*order-table 购物车订单*/
+.order-table table{ border-collapse:collapse; border-spacing: 0; table-layout:fixed;}
+.order-table .other td{ background:#fcfcfc;}
+.order-table th{ height:36px; background:#f5f5f5; border-top:2px solid #e02d2d; line-height:36px; font-weight:normal; text-align:center;}
+.order-table .th-1{ width:62px;}
+.order-table .th-2{ width:217px; padding:0 0 0 100px; text-align:left;}
+.order-table .th-3{ width:122px;}
+.order-table .th-4{ width:106px;}
+.order-table .th-5{ width:121px;}
+.order-table .th-6{ width:107px;}
+.order-table .th-7{ width:250px;}
+.order-table .th-1 input{ margin:0 5px 0 0; *margin:0 3px 0 0; _position:relative; _top:-2px;}
+
+.order-table .store-infor{ height:43px; padding:10px 0 0 0; border:0 none; background:#fff;}
+.shopname{ float:left;line-height:43px; }
+.shopname input{ margin:-2px 5px 0 0; *margin:0 3px 0 0;  margin:0 5px 0 0\0; position: relative; *top: -3px; top:-4px\0;}
+.security{ padding:5px 0; _padding:0; padding:2px 0\0;}
+.security-a,.security-b,.security-c,.security-d{ float:left; width:16px; height:16px; display:block; margin-right:5px;}
+.security-a{ background-position:0 -286px;}
+.security-b{ background-position:-22px -286px;}
+.security-c{ background-position:-43px -286px;}
+.security-d{ background-position:-65px -286px;}
+.contact{ float:left; padding:11px 0 0 15px; _padding:0 0 0 15px; }
+.contact a{ float:left; margin:0 10px 0 0;}
+.contact-a{ padding-left:23px; display:block; background-position:-242px -437px; color:#333; text-indent: -9999em; overflow: hidden;}
+.contact-c{ padding-left:14px; display:block; float:left; background-position:-249px -404px;}
+
+.order-table td{ padding:10px; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; text-align:center;}
+.order-table .s-infor{ border-left:1px solid #e3e3e3;}
+.order-table .s-del{ border-right:1px solid #e3e3e3;}
+.order-table .s-infor{ padding:10px 10px 10px 12px; width:357px;}
+.order-table .not-choose td{background: #f3f7fa}
+.order-table invalid td{ background:#f3f3f3; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9;}
+.order-table invalid .s-infor{ border-left:1px solid #ceddf0;}
+
+.s-price{ width:102px;}
+.s-amount{ width:130px;}
+.s-agio{ width:101px;}
+.s-total{ width:87px;}
+.s-del{ width:61px;}
+
+.s-infor input{ float:left; margin:24px 10px 0 0; *margin:21px 8px 0 -2px;}
+.s-infor .pic{ float:left; width:80px; height:60px; border:1px solid #ccc; line-height:58px;  *display:block; *font-size:53px; *font-family:arial; text-align:center; background:#fff;}
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
+    head~body .s-infor .pic {line-height:60px;}
+}
+.s-infor .pic img{  vertical-align:middle;}
+.s-infor .inforbox{ float:left; width:240px; padding:0 0 0 10px; line-height:20px; text-align:left;}
+.s-infor .inforbox .tit{ margin:-2px 0 4px ; height:40px; line-height: 20px; font-weight:normal; font-size:12px; overflow:hidden;}
+.s-infor .inforbox p{ color:#666;}
+.s-infor .info-con{ height:20px; line-height:20px; color:#666; }
+.s-infor .info-con span{ cursor:pointer;}
+.s-infor .info-con-hover{ position:relative; z-index:1}
+.s-infor .info-con .info-help{ display:none;}
+.s-infor .info-con-hover .info-help{ display:block;}
+.s-infor .info-help{ position:absolute; left:36px; top:20px; padding:10px; border:1px solid #ccc; background:#fff; color:#333;}
+.s-infor .info-help a{ color:#3366cc;}
+.s-infor .info-help a:hover{ color:#f60;}
+.s-infor .info-help h5{ white-space:nowrap; display:block; font-size:12px; height:20px; line-height:20px; padding:0 0 6px;}
+.s-infor .info-help p{ white-space:nowrap; line-height:22px;}
+
+.s-old-price{ display:block; padding-top:13px; color:#999; text-decoration:line-through;}
+.limit-price,.bulk-price{ height:20px; display:block; margin:6px 8px 0; line-height:20px; color:#fff;}
+.limit-price,.agio-limit{ background-color:#89c81e; }
+.bulk-price,.agio-bulk{ background-color:#f90;}
+
+.buy-num{ position:relative; width:110px; height:20px; padding:31px 0; text-align:center;}
+.buy-num .tips{ position:absolute; left:21px; bottom:3px; padding:0 10px; height:20px; line-height:20px; text-align:center; color:#fff; background:#ff7373; display:none; }
+.buy-num .tips-2{ position:absolute; left:7px; bottom:3px; padding:0 10px; height:20px; line-height:20px; text-align:center; color:#fff; background:#ff7373; white-space: nowrap;
+display:none;}
+.minus,.plus{ float:left; width:10px; height:10px; line-height:10px; background:#fff; color:#333; text-align:center; border:1px solid #ccc; overflow:hidden;}
+.no-minus{ float:left; width:10px; height:10px; line-height:10px; background:#fff; color:#ccc; text-align:center; border:1px solid #ccc; overflow:hidden; cursor:default;}
+.no-minus:hover{ color:#ccc;}
+.minus:hover,.plus:hover{ color:#333; border:1px solid #ff6600; text-decoration:none;}
+.minus,.no-minus{ margin:5px 8px 0 10px;}
+.plus{ margin:5px 0 0 8px;}
+.text-amount{ width:28px; height:16px; height:auto\9; float:left; padding:1px 3px; text-align:right;}
+
+.agio-limit,.agio-bulk{ height:20px; display:inline-block; padding:0 6px; color:#fff; line-height:20px; cursor:pointer; position:relative;}
+.remaining-time{ position:absolute; top:-60px; left:0; padding:5px 10px; color:#333; border:1px solid #ccc; background-color:#fff; line-height:20px; white-space:nowrap; display:none; cursor:pointer; text-align:left; color:#666; cursor:auto;}
+.remaining-time i{ display:block; width:13px; height:7px; position: absolute; bottom:-7px; _bottom:-15px; left:7px; background-position:-248px -229px;}
+
+.s-total em{ color:#ff0000; font-family:"verdana";}
+.s-del a{ display:block; line-height:20px;}
+.s-delbox{ position:relative;}
+.deletebox{ width:144px; padding:6px 10px; position:absolute; top:-60px; left:-50px; border:1px solid #ccc; background-color:#fff; line-height:18px; color:#666;}
+.s-del .deletebox a{ margin:0 12px; display:inline-block; color:#3366cc; cursor:pointer;}
+.s-del .deletebox a:hover{ color:#f60;}
+.deletebox i{ display:block; width:13px; height:7px; margin-left:-5px; position: absolute; bottom:-7px; _bottom:-15px; left:50%; background-position:-248px -229px;}
+
+.over-order td{ border-top:1px solid #f4f7fa; background:#f8f9fb;}
+.order-table .over-order .s-infor{ border-left:1px solid #f8f9fb;}
+.order-table .over-order .s-del{ border-right: 1px solid #f8f9fb;}
+.over-order .s-price{ color:#999;}
+.over-order .limit-price,.over-order .agio-limit{ background:#bfbfbf;}
+.over-order .tips{ position:absolute; left:10px; bottom:31px; padding:0 10px; height:20px; line-height:20px; text-align:center; color:#fff; background:#bfbfbf; display:none; }
+.over-order .tips .deletebox{ top:-40px; left:-40px;}
+
+.total-price{ padding:0 10px 0 0; height:52px; line-height:52px; text-align:right;}
+.total-price span{ color:#666;}
+.total-price em{ color:#ff0000; font-size:16px; font-weight:bold; font-family:verdana}
+
+.order-foot{ position:relative; padding:0 0 0 12px; height:33px; border:1px solid #e3e3e3; background:##f5f5f5; line-height:33px;}
+.order-foot a{ float:left; margin:0 30px 0 0}
+.order-foot label{ float:left; padding:0 25px 0 0 ;_padding:7px 25px 0 0;}
+.order-foot label input{ margin:0 5px 0 0; *margin:0 3px 0 0; _position:relative; _top:-2px;}
+.order-foot .accounting-btn{ position:absolute; top:-1px; right:-1px; width:130px; height:35px; font:18px/35px "Microsoft YaHei"; color:rgb(255,0,0); border:0 none; background-position:0 -113px; cursor:pointer;}
+.order-foot .go-shopping{ float:none; position:absolute; top:0; right:150px; margin:0; font-family:"simsun";}
+.cannotbuy-layer{ width:168px; position:absolute; bottom:45px; right:-30px; padding:10px; border:1px solid #ccc; background-color:#fff; line-height:20px; color:#666;}
+.cannotbuy-layer a{ float:none; font-family:"simsun"; }
+.cannotbuy-layer i{ display:block; width:13px; height:7px; margin-left:-5px; position: absolute; bottom:-7px; _bottom:-15px; left:50%; background-position:-248px -229px;}
+.cannotbuy-layer b{ display:block; width:10px; height:9px; position:absolute; top:5px; right:5px; background-position:-235px -229px; font:0/0 arial; cursor:pointer;}
+.process{ position:absolute; top:-1px; right:-1px;width:130px; height:35px; font:18px/35px "Microsoft YaHei"; color:#fff; border:0 none; background-position:0 -211px; text-align:center; }
+.process span{ padding: 0 0 0 22px; margin:0 0 0 -5px; background: url("http://icon.zol-img.com.cn/zol_shop/order/images_20120628/ico.gif") no-repeat 0 6px;}
+.wrong_tips{ width:auto; padding:10px 20px;}
+.guide{ height:32px; padding:10px 10px 10px 0; line-height:32px; text-align:right;}
+.guide a{ color:#999;}
+
+/*cart-removed 已删除订单*/
+.cart-removed{ border:1px solid #e0e0e0;}
+.cart-removed .tit{ height:28px; padding:0 0 0 10px; line-height:28px; background:#e0e0e0;}
+.cart-removed ul{ padding:0 10px; position:relative; overflow:hidden; zoom:1;}
+.cart-removed li{ height:37px; margin:-1px 0 0; line-height:37px; border-top:1px dotted #e0e0e0;}
+.cart-removed h3{ float:left; width:480px; padding:0 0 0 10px; font-weight:normal; font-size:12px;}
+.cart-removed .price{ float:left; width:138px; padding:0 10px 0 0; text-align:right; font-family:"verdana";}
+.cart-removed .quantity{ float:left; width:175px; text-align:center;}
+.cart-removed .control{ float:left;}
+.cart-removed .control a{ margin:0 10px;}
+
+/*mod-hd*/
+.mod-hd{ height:33px; padding:5px 0 0 10px; font:18px/33px "Microsoft YaHei"; border-bottom:2px solid #ccc;}
+
+/*addresslist 确认收货地址*/
+.addresslist{ padding:10px 0 5px;}
+.addresslist li{ position: relative; height:21px; padding:10px 0 10px 16px; line-height:21px; }
+.addresslist li  span{ padding:0 15px;}
+.addresslist li input{ margin:0 10px 0 0; *margin:0 5px 0 0; position:relative\0;*position:relative; top:-2px\0; _top:-2px;}
+.addresslist li .del{ display:none; position:absolute; top:9px; right:15px; color:#ccc;}
+.addresslist li .del a{ margin:0 5px;}
+.addresslist .cur{ padding:9px 0 9px 15px; border:1px solid #ffecb8; background:#fffadc; font-weight:bold;}
+.addresslist .cur .del{ display:block; font-weight:normal;}
+.addressmod { position: relative;zoom:1}
+.addressmod p{ padding:0 0 0 38px;}
+
+/*confirm-table 确认商品信息*/
+.confirm-table .hd{ font-size:16px; font-family:"Microsoft YaHei";}
+
+.confirm-table table{ border-collapse:collapse; border-spacing: 0;}
+.confirm-table th{ height:26px; padding:14px 0 0 0; line-height:26px; font-weight:normal; text-align:center;}
+.confirm-table .th-1{ width:369px;}
+.confirm-table .th-2{ width:136px;}
+.confirm-table .th-3{ width:152px;}
+.confirm-table .th-4{ width:151px;}
+.confirm-table .th-5{ width:150px;}
+.confirm-table .tipsmod{ background:#fff;  padding:10px 0 0; border:0 none;}
+.confirm-table .tipsmod p{ font-size:14px; font-weight:bold; line-height:39px; text-align:center; border:1px solid #ffd9a1; background:#fff8eb; color:#ff0000;}
+.confirm-table td{ padding:10px; border-top:1px solid #ceddf0; border-bottom:1px solid #ceddf0; background: #ecf3fb; text-align:center;}
+
+.confirm-table .store-infor{ height:43px; padding:10px 0 0; background:#fff; border:0 none;}
+.confirm-table .s-infor{ width:366px; padding:10px 10px 10px 20px; border-left:1px solid #ceddf0;}
+.confirm-table .shopname span{ font-size:14px; font-weight:bold;}
+.confirm-table .s-price{ width:126px;}
+.confirm-table .limit-price,.confirm-table .bulk-price{ margin:6px 15px 0}
+.confirm-table .s-amount{ width:132px;}
+.confirm-table .s-agio{ width:131px;}
+.confirm-table .s-tota{ width:130px;}
+.confirm-table .s-total{ border-right:1px solid #ceddf0;}
+.confirm-table .buyer-note td{ padding:0; background:#fff; text-align:left; vertical-align:top;}
+.notemod{ border-left:1px solid #ceddf0;}
+.buyer-note .note{ width:490px; padding:10px 0 0 15px;}
+.note .label{ vertical-align:top; position:relative; top:2px; }
+.note .tips{  width:400px; height:56px; padding:0 5px; overflow-y:auto; border:1px solid #dcdcdc; resize:none; font:12px/22px arial; color:#999;}
+.buyer-note .waymod{ border-left:1px solid #ceddf0; border-right:1px solid #ceddf0;}
+.buyer-note .waymod dl{ width:453px; height:22px; padding:9px 0; position: relative; line-height:22px;}
+.waymod dt{ position:absolute; top:9px; left:15px; width:80px; font-family:"simsun"; text-align:right;}
+.waymod dd{ padding:0 0 0 100px;}
+.waymod .xh{ margin:0 7px 0 0; color: #FF0000; }
+.waymod label{ float:left; margin:0 20px 0 0; +margin:0 15px 0 0; _margin:2px 15px 0 0;}
+.waymod form{_padding:2px 0 0;}
+.waymod input,.waymod select,.waymod form{ vertical-align:middle;}
+.waymod input{ margin:0 5px 0 0; +margin:-1px 0 0; _margin:-3px 0 0; margin:-5px 5px 0 0\0;}
+.waymod select{ width:158px; height:22px; border:1px solid #8ab6dd;}
+.waymod .free{ color:#f60;}
+.bor{ border-bottom:1px solid #ceddf0;}
+.confirm-table .total-cost td{ height:33px; padding:10px 10px 5px 0; background:#fff; text-align: right; border:0; }
+.total-cost span{ color:#666}
+.total-cost em{ font-weight:bold; font-size:16px; color:#f00; font-family:verdana; }
+.confirm-table .s-infor .inforbox{ width:236px;}
+/*address-confirm*/
+.address-confirm{ border-top:1px solid #e0e0e0; zoom:1;}
+.confirmmod{ float:right; width:407px; }
+.confirmmod ul{ padding:15px 20px; width:365px; border:1px solid #ffd9a1; background:#fff8eb;}
+.confirmmod li{ position:relative; padding: 0 0 0 75px; font-size:14px; line-height:26px;zoom:1;}
+.confirmmod li span{ position:absolute; top:0; left:0; width:75px;  text-align:right;}
+.confirmmod li b{ font-weight:normal;}
+.confirmmod li em{ margin:0 5px 0 0; color:#ff0000; font-size:16px; font-family:"Verdana"; font-weight:bold;}
+
+/*submitted-order*/
+.submitted-order{ margin-top:20px; text-align:right;}
+.confirmbtn{ display:inline-block; width:130px; height:35px; background-position:-131px -113px; font: bold 18px/35px "Microsoft YaHei";; border:0 none; color:#fff; cursor: pointer;}
+.submitted-order .go-shopping{ margin-right:10px; font-family:"simsun";}
+
+
+/*layerbox*/
+.layerbox{ width:800px; border:5px solid #ccc;}
+.layer-hd{ position:relative; padding:0 0 0 10px; height:34px; font:16px/34px "Microsoft YaHei"; background-position:0 0; background-repeat:repeat-x; border-bottom:1px solid #e0e0e0;}
+.layer-hd .closebtn{ position:absolute; top:13px; right:10px; display:block; width:10px; height:9px; background-position:-235px -229px; font:0/0 arial; cursor:pointer;}
+
+.modify{ padding:28px 0 30px 30px;}
+.modify dl{ margin:0 0 10px; position:relative;}
+.modify .add dt{ top:2px\9;}
+.modify dt{ position:absolute; top:0; left:-2px; width:80px; height:24px; font-family:"simsun"; line-height:24px; text-align:right; color:#666;}
+.modify .xh{ margin:0 5px 0 0; color:#cc0000; line-height: 24px;}
+.modify dd{ padding:0 0 0 80px; color:#666;}
+.modify dd input{ height:24px; padding:0 0 0 5px; border:1px solid #ccc; line-height:24px;}
+.modify dd select{ float:left; width:140px; margin-right:6px; height:22px; border:1px solid #abadb3; line-height:22px; color:#666;}
+.modify .area{ float:left; margin:2px 0 0;}
+.modify .checkbox{ margin:0 5px 0 0; *margin:0 2px 0 0; _position:relative; _top:-2px; border:0 none;}
+.modify .recinput{ width:120px;}
+.modify .addinput{ margin:0; width:500px;}
+.modify .zipinput{ width:85px;}
+.modify .mobileinput,.modify .planeinput{ width:145px;}
+.wrong_tip{ height:20px; padding:0 10px 0 30px; margin:0 0 0 5px; display:inline-block; border:1px solid #ff0101; background-color:#fff1f1; background-position:-241px -462px; line-height:20px;}
+.modify .tips{ padding-left:10px; line-height:24px; color:#888;}
+.modify .btn-zu{ padding:0 0 0 80px;}
+.savebtn,.cancelbtn{ float:left; margin:0 20px 0 0; width:60px; height:26px; font:16px/26px "Microsoft YaHei"; border:0 none; cursor:pointer;}
+.savebtn{ background-position:-131px -150px; color:#fff;}
+.cancelbtn{ background-position:-131px -180px; color:#333;}
+
+.layerbox-2{ width:440px;position: absolute;top: 50%;left: 50%;background: #fff;display:none;z-index:1001;margin-top: -200px;margin-left: -220px;}
+.layerbox-2 .tip-head {font-size:18px; height:30px; line-height:30px; font-family:"Microsoft YaHei"; padding-bottom:5px;}
+.layerbox-2 .pay-tips { position:relative; padding:20px 0px 20px 88px; font-size:14px; line-height:24px; position:relative; zoom:1;}
+.layerbox-overlay{background:#000;filter:alpha(opacity=50);opacity:0.5;-moz-opacity:0.5; width:100%;height:100%;position:fixed;top:0;left:0;display:none;z-index:1000;_position:absolute;_height:expression(documentElement.offsetHeight +"px");_top:expression(documentElement.scrollTop +"px");}
+.pay-tips-icon { position:absolute; top:20px; left:30px; width:43px; height:43px; overflow:hidden; background-position:-121px -297px;}
+.pay-btn-wrap { padding:10px 0px;}
+.pay-btn-wrap a { margin:0 10px 0 0;}
+.pay-tip-btn{ display:inline-block; width:99px; height:34px; line-height:34px; font-size:12px; color:#333; text-align:center; background-position:-132px -211px;}
+.pay-tip-btn:hover {text-decoration:none; color:#333;}
+.go-back-chose { height:24px; line-height:24px; font-size:14px; font-family:"simsun";}
+
+/*order-tips*/
+.order-tips{ position:relative; padding:5px 0 5px 77px; border-bottom:2px solid #ccc; zoom:1;}
+.order-tips i{ position:absolute; top:16px; left:20px; display:block; width:42px; height:42px; background-position:-122px -247px;}
+.order-tips h3{ font:18px/32px "Microsoft YaHei";}
+.order-tips h3 span{ font:14px/32px "arial"; color:#666; font-weight:normal;}
+.amount{ position: relative;}
+.amount span{ padding:0 25px 0 0; font:bold 12px/30px "arial"; color:#666;}
+.amount span em{ color:#ff0000; padding:0 5px 0 0; font-size:14px;}
+.order-tips .tip{ padding:5px 0 10px; font-size:14px; color:#666;}
+
+.tip-success{ padding:18px 0 18px 77px; border:1px solid #ffd9a1; background:#fff8eb;}
+.tip-success i{ top:27px;}
+.tip-success h3 span{ font:14px/32px "Microsoft YaHei"; color:#333; font-weight:normal;}
+.tip-success b{ font-weight:normal;}
+
+.goodinfor-layer{ position: absolute; top: 30px; left:40px; padding:0 15px;width:373px; border: 1px solid #cbcbcb; background: #fff; font-weight: normal;display:none;}
+.goodinfor-layer ul{ position: relative; overflow: hidden; zoom:1;}
+.goodinfor-layer li{ margin:-1px 0 0 ; padding:10px 0; border-top: 1px dotted #d9d9d9; overflow: hidden; zoom:1; line-height: 20px; color: #666;}
+.goodinfor-layer li span{ font-weight: normal; line-height: 20px;padding:0; }
+.goodinfor-layer .goods{ float: left; width:210px;height:40px;overflow:hidden;}
+.goodinfor-layer .number{ float: left; width:97px; text-align: center; }
+.goodinfor-layer .price{ float:left; width:66px; text-align: center;}
+.goodinfor-layer .more{ height: 28px; line-height: 28px; text-align: right;border-top: 1px dotted #d9d9d9; }
+.goodinfor-layer .ico{ dispaly:block; position: absolute; top:-7px; left:9px; width:13px; height:7px; background-position: -248px -173px; font:0/0 arial;}
+
+/*paymentmod 第三方支付*/
+.paymentmod{ position:relative; zoom:1;}
+.paymentmod h3{ height:34px; font-size:14px; line-height:34px;}
+.payguide{ height:34px; line-height:34px; position:absolute; top:44px; right:0; color:#ccc;}
+.payguide a{ margin:0 10px;}
+
+.paymentbox{ padding:24px 0 27px 28px; border:1px solid #e0e0e0; border-top:0 none;}
+.paymentbox .hd{ padding:0 0 15px 0; font-size:14px; line-height:26px; color:#666;}
+.paymentbtn{ position:relative; display:block; padding:6px 0 6px 130px; width:127px; height:36px; background-position:0 -64px; font:16px/36px "Microsoft YaHei"; color:#fff;}
+.paymentbtn .alipay{ position:absolute; top:6px; left:5px; display:block; width:115px; height:36px; background-position:0 -247px;}
+.paymentbtn:hover{ color:#fff; text-decoration:none;}
+.paymentbox p{ padding:7px 0 0; color:#999;}
+
+/*pay-typebox 线上支付*/
+.pay-typebox .hd{ height:34px; line-height:34px; font-size:14px; color:#666;}
+.pay-typelist{ padding:0 0 0 30px; border:1px solid #ffd9a1; background:#fff8eb;}
+.pay-typelist dl{ padding:15px 0 0;}
+.pay-typelist dt{ padding:0 0 10px 0; font:16px/30px "Microsoft YaHei";}
+.pay-typelist dd{ float:left; padding:0 4px 19px 20px;}
+.pay-typelist img{ display:block; border:1px solid #ccc492; -webkit-border-radius:2px; border-radius:2px; }
+.pay-typelist a:hover img{ border:1px solid #f26924;}
+
+.viewbtn{ display:block; width:130px; height:30px; margin:7px 0 0 ; background-position:0 -180px; font:14px/30px "Microsoft YaHei"; text-align:center; color:#333;}
+.viewbtn:hover{ color:#333; text-decoration:none}
+.usemod{ padding:20px 0 5px; line-height:24px;}
+.usemod li{ color:#666;}
+.usemod li span{ margin:0  -10px 0 0; color:#333;}
+.usemod a{ margin:0 10px; }
+
+/*signtip*/
+.signtip{ padding:0 0; }
+.signtip_list{ padding:10px 0 15px 9px;}
+.signtip_list li{ line-height:30px; color:#666;}
+
+/*codmod*/
+.codmod{ position:relative; padding:22px 0 15px 29px; border:1px solid #ffd9a1; background-color:#fff8eb; zoom:1;}
+.codico{ width:43px; height:44px; display:block; position:absolute; top:24px; left:30px; background-position:0 -300px;}
+.codmod .amount{ font-size:14px; line-height:27px;}
+.codmod .amount dt{ float:left;}
+.codmod .amount dd{ float:left; padding:0 22px 0 0;}
+.viewbtn_2{ width:130px; height:30px; margin:8px 0; background-position:0 -149px; display:inline-block; border:0 none; cursor:pointer; color:#fff; text-align:center; font:16px/30px "Microsoft YaHei";}
+.viewbtn_2:hover{ color:#fff; text-decoration:none;}
+.viewbtn_3{ font-size:14px;}
+.codmod .cancelbtn{ display:block; position: absolute; top:15px; right:0;  width: 60px; height: 26px; background-position: -131px -180px; font-size: 12px; line-height: 26px; text-align: center;}
+
+/*paymentbox*/
+.paymentbox-2{ padding:0 20px; position:relative; zoom:1; border:1px solid #e0e0e0; border-top:0 none;}
+.paymentbox-2 .confirm-table th{ height:36px; padding:0; line-height:36px; border-top:2px solid #0056b3; background:#edf3fa;}
+.paymentbox-2 .total-cost dl{ overflow:hidden; zoom:1; padding:4px 0 4px 590px; font:14px/22px arial; text-align:left;}
+.paymentbox-2 .total-cost dt{ float:left; width:195px;}
+.paymentbox-2 .total-cost dd{ float:left; width:123px;}
+.total-cost .credit-amount{ display:inline-block; padding:0 5px; background:#e02e2d; color:#fff; font-size:12px;}
+.paymentbox-2 .total-cost em{ font-weight:normal;}
+.link-guide{ position:absolute; top:-25px; right:10px;}
+
+.offer-detail td{ text-align:left;}
+.offer-detail .type{ display:inline-block; margin:0 0 5px; padding:0 4px; line-height:20px; background:#e02e2d; color:#fff;}
+.offer-detail p{ line-height:22px;}
+
+/*物流信息*/
+.informod { border-top:1px solid #e0e0e0;}
+.first{ border:0 none;}
+.informod .hd{ padding:10px 0 0; font-weight:bold; line-height:31px;}
+.informod .orderinfor-mod{ padding:10px 10px 16px;}
+.informod .orderinfor-mod dl{ float:left; width:296px;}
+.orderinfor-mod dt{ float:left; width:70px; height:24px; line-height:24px; text-align:right;}
+.orderinfor-mod dd{ float:left; width:226px; height:24px; line-height:24px;}
+.orderinfor-mod dd img{ margin-right:7px; vertical-align:middle;_margin-top:5px; }
+.confirm-table .spacing td{ height:10px; background-color:#fff; padding:0; border:0 none;}
+.orderinfor-mod .confirm-receiving-dt { width:117px;}
+.orderinfor-mod .confirm-receiving-dd { width:179px;}
+
+.receiving_infor{ padding:8px 0 18px; }
+.receiving_infor dt{ float:left; width:72px; padding:6px 0; font-weight:bold; line-height:24px;}
+.receiving_infor dd{ padding:6px 0 6px 72px; line-height:24px;}
+.logistics{ padding:0 0 10px 31px; line-height:24px;}
+.logistics dt{ float:left; width:60px;}
+.logistics dd{ padding-left:60px;}
+.logtip{ width:520px; padding-left:24px; margin-bottom:8px; background-position:-243px -340px; border:1px solid #ffcc7f; background-color:#ffffe5;}
+.laststate{ color:#ff0000;}
+.tracktip{ width:338px;  padding-left:24px; margin:8px 0 16px; background-position:-243px -365px; border:1px solid #40b3ff; background-color:#e5f5ff;}
+
+.surplus-time{ padding-left:26px;}
+.surplus-time em{ padding:0 5px; font-size:14px;  color:#FF4F00;}
+.changebtn{ position:absolute; top:15px; right:15px; width:66px; height:24px; background-position:-192px -181px; line-height:24px; text-align:center; color:#666;}
+.changebtn:hover{ color:#666; text-decoration:none;}
+
+.tipbox{ width:298px; border:1px solid #e0e0e0; position:relative;}
+.tipbox .hd{ height:28px; padding:0 0 0 8px; font-size:14px; font-weight:bold; line-height:28px; background-position:0 0; background-repeat:repeat-x; border-bottom:1px solid #e0e0e0;}
+.tipbox i{ width:10px; height:9px; position:absolute; top:10px; right:10px; text-indent:-9999em; font:0/0 arial; background-position:-235px -229px; cursor:pointer;}
+.tipbox .content{ padding:20px 0; font-size:14px; background-color:#fff; text-align:center; color:#666;}
+.tipbox .content p{ padding:3px 0; line-height:24px;}
+.tipbox .content p a{ margin-left:10px; font-family:"simsun";}
+.viewzu{ padding-top:20px; text-align:center;}
+.viewzu input{ float:none; margin-right:13px; border:0 none; cursor:pointer; font-size:16px; font-family:"Microsoft YaHei";}
+.conbtn{ width:60px; height:26px; background-position:-131px -150px; border:0 none; cursor:pointer; color:#fff;}
+
+/*stepsmod*/
+.stepsmod{ padding:0 0 8px;}
+.stepsmod .hd{ height:40px; position:relative; line-height:40px; font-size:14px; font-weight:bold;}
+.stepsmod .hd span{ padding:0 17px 0 0;}
+.stepsmod .hd .tip{ position:absolute; top:0; right:10px; font-size:12px; font-weight:normal; color:#666;}
+.seller-infor{ float:left; width:288px; padding:24px 0 5px 30px; border:1px solid #e0e0e0;}
+.seller-infor ul{ font-size:14px; line-height:24px;}
+.seller-infor li span{ color:#999;}
+.detaillink{ margin:22px 0; display:inline-block; font-size:14px; font-family:"simsun";}
+
+.scoredetail{ float:right; width:605px; padding:6px 0 10px 15px; background-color:#fafafa;}
+.scoredetail dl{ height:20px; padding:8px 0; line-height:20px;}
+.scoredetail dt{ float:left; width:110px; text-align:right;}
+.scoredetail dd{ padding:0 0 0 110px;}
+.star,.star em{ width:113px; height:20px; display:block; float:left; vertical-align:middle; font:0/0 arial;}
+.star{ background-position:0 -337px;}
+.star em{ background-position:0 -306px;}
+.star-des{ padding:0 0 0 40px;}
+.star-des em{ padding:0 4px 0 0; color:#ff0000; font-weight:bold;}
+.scoremod .tip{ float:right; width:620px; height:29px; line-height:29px; color:#999;}
+
+.evallist{ border:1px solid #e4eef8; border-bottom:0 none; background:#f8f9fb;}
+.evallist li{ padding:4px 15px; border-bottom:1px solid #e4eef8; }
+.evallist .s-infor{ float:left; width:352px; padding-top:10px; }
+.evalmod{ float:left; width:568px; line-height:20px;}
+.evalmod dt{ float:left; width:83px; padding:7px 0; text-align:left;}
+.evalmod dd{ float:left; width:485px; padding:7px 0;}
+.evalmod dd label{ float:left; margin-right:60px; *margin-right:56px; height:20px; }
+.evalmod label span{ float:left; width:44px;}
+.evalmod .good-view span{ background-position:100% -259px; }
+.evalmod .medium-view span{ background-position:100% -284px;}
+.evalmod .bad-view span{ background-position:100% -309px; }
+.evalmod dd input{ float:left; vertical-align:middle; margin:3px 10px 0 0; *margin:-2px 7px 0 0;}
+.evalmod textarea{ width:420px; height:64px; padding:2px 9px; border:1px solid #dbdbdb; resize: none; font-size:12px; line-height:20px; color:#999; font-family:"arial";}
+.evalmod  .fontcolor{ color:#f60;}
+.evalmod dd .tip{ color:#999;}
+.evalmod dd .tip em{ color:#ff0000;}
+
+.submit-eval{ margin-top:15px; text-align:center;}
+.submit-eval label input{ margin-right:8px; +margin:1px 5px 0 0; _margin:-3px 5px 0 0;}
+.submit-eval .confirmbtn{ margin:0 0 0 10px; font-weight:normal;}
+
+/*errormod*/
+.errormod{ position:relative; padding:58px 0 50px 452px; height:136px; background:url(http://icon.zol-img.com.cn/zol_shop/order/error/tips.png) no-repeat 142px 58px;}
+.error-infor{ width:283px; text-align:center;}
+.error-infor h3{ padding:21px 0; font:14px/26px "Microsoft YaHei";}
+.error-infor p{ line-height:24px;}
+.error-infor a{ color:#0000ee; text-decoration:underline;}
+.error-infor a:hover{ color:#f60;}
+
+.star-mod{ float:left;cursor: pointer;}
+.none{display: none;}
+
+/*add by liyue 2013-11-18*/
+.order-tip{ position:relative; top:-2px; *top:-10px; margin:0 0 0 7px; padding:0 10px; display:inline-block; height:22px; line-height:22px; color:#fff; background:#f00;}
+.order-tip .ico{ padding:0 5px 0 0; font-family:"Simsun";}
+
+/*合约*/
+.contract-package{ margin:-16px 0 0; padding:0 10px 50px;}
+.contract-package dl{ position:relative; padding:0 0 0 70px; line-height:24px; zoom:1;}
+.contract-package dt{ position:absolute; top:0; left:0; width:70px; text-align:right;}
+.contract-package em{ color:#f00;}
+.contract-package span{ color:#999;}
+
+/*add by liyue 2013-11-12 确认合约信息*/
+.contract-infor .tipsbox{ margin:10px 0 0; padding:10px; border:1px solid #ffd9a1; background:#fff8eb;}
+.contract-infor .modify{ padding:10px 10px 0;}
+.modify .recinput-wrong{ border:1px solid #f00;}
+.contract-infor .wrong_tip{ position:relative; top:1px; margin:0 0 0 10px; padding:2px 10px 2px 30px}
+.package dd{ line-height:26px;}
+.package em{ color:#f00;}
+.package span{ color:#999;}
+.package a{ margin:0 0 0 15px;} 
+.submitted-order .tips{ margin:0 10px 0 0; color:#f00;}
+.contract-layerbox{ width:400px;}
+.contract-layerbox .pay-tips{ padding:50px 70px 60px 88px;}
+.contract-layerbox p{ font:16px/22px "Microsoft YaHei";}
+.contract-layerbox .pay-tips-icon{ top:50px;}  
+
+/* 满减优惠 add by liyue 2014-7-3 */
+.order-table .offer-detail{ padding:0; border:1px solid #e3e3e3;}
+.order-table .offer-detail .total{ padding:5px 20px; height:20px; text-align:left; background:#fff5d6; color:#666; line-height:20px;}
+.order-table .offer-detail .type{ display:inline-block; margin:0 10px 0 0; padding:0 4px; height:20px; color:#fff; background:#e02d2d;}
+.order-table .offer-detail em{ color:#f00;}
+.order-table .offer-detail .lists{ padding:5px 73px; background:#fffcf4; text-align:left; border-top:1px solid #e3e3e3;}
+.order-table .offer-detail .lists li{ font:12px/22px arial; color:#999;}
+
+/* Z保障+商家退货电话 */
+.return-tel { margin: 20px 0 -20px; padding: 0 0 0 35px; position: relative; color: #333; font-weight: 700; font-size: 14px; line-height: 30px; background: url(http://icon.zol-img.com.cn/newshop/merchant/return-tel.png) no-repeat 8px 50%; }
+
+/* z+ 商品图片 */
+.tag-security{float: left; _display: inline; margin: 0 10px 0 -10px; padding: 0 0 0 20px; line-height: 22px; background: url(http://icon.zol-img.com.cn/newshop/merchant/tag-security.png) no-repeat 0 50%; color: #666;}
+
+/* 合约信息 */
+.contract-infor-box{ padding:0 0 15px;}
+.contract-infor-box dl{ position:relative; margin:10px 0 0; padding:0 0 0 100px; font:12px/20px arial; zoom:1}
+.contract-infor-box dt{ position:absolute; top:0; left:0; width:90px; text-align:right; color:#666;}
+.uploaded{ float:left; padding:0 10px 0 0; color:#f60;}
+.audit-not-pass,.audit-pass{ float:left; padding:0 0 0 18px;}
+.audit-not-pass{ background-position:-247px -498px; color:#f00;}
+.audit-pass{ background-position:-247px -533px; color:#390;}
+.reason{ padding:10px 0 0; width:430px;}
+.upload-again{ display:block; margin:15px 0 0; width:80px; height:30px; font:12px/30px arial; text-align:center; color:#fff; background-position:0 -366px;}
+.upload-again:hover{ background-position:0 -397px; color:#fff; text-decoration:none;}
+
+/*layerbox-upload*/
+.upload-box .btn,.upload-box .front span,.upload-box .back span,.upload-box a .close{ background:url(http://icon.zol-img.com.cn/newshop/order/telecom/upload-ico.png) no-repeat;}
+.layerbox-upload{ position:fixed; top:50%; left:50%; z-index:10001; margin:-200px 0 0 -235px; padding:5px; width:470px; background:rgba(0,0,0,0.30); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#4d000000,endcolorstr=#4d000000,gradientType=1);}
+.layer-hd{ position:relative; padding:0 12px; height:38px; border-bottom:1px solid #eee; background:#fff;}
+.layer-hd h3{ font:bold 14px/38px arial;}
+.layer-content{ padding:5px 15px 0; background:#fff;}
+.layer-content p{ font:12px/30px arial;}
+.layer-content .xh{ padding:0 4px 0 0; color:#999; font-family:sumsin;}
+.upload-box{ padding:20px;}
+.upload-box a{ float:left; margin:0 30px; width:140px;}
+.upload-box .btn{ display:block; width:133px; height:133px; border:1px solid #e6e5e5; background-position:0 0; background-color:#f8f8f8; cursor:pointer;}
+.upload-box a:hover .btn{ background-color:#fff;}
+.upload-box span{ display:block; padding:0 0 0 30px; font:bold 14px/34px arial; color:#333;}
+.upload-box a:hover span{ color:#f33;}
+.upload-box .front span{ background-position:-107px -128px;}
+.upload-box .back span{ background-position:-107px -165px;}
+.upload-box a img{ display:block; border:1px solid #e6e5e5;}
+.upload-box a .close{ position:absolute; top:-9px; right:0; width:18px; height:18px; font:0/0 arial; background-position:-20px -136px; cursor:pointer;}
+.upload-box a .close:hover{ background-position:0 -136px;}
+.layer-foot{ position:relative; padding:0 0 30px; text-align:center; background:#fff;}
+.layer-foot .tips{ position:absolute; top:0; left:60px; font:12px/34px arial; color:#f33;}
+.confirm-submit{ margin:0 auto; width:120px; height:34px; background:#e53434; font:16px/34px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; color:#fff; text-align:center; cursor:pointer; border:0 none; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+span.confirm-submit{ display:block; width:118px; height:32px; border:1px solid #d9d9d9; background:#f1f1f1; color:#ccc; cursor:default;}

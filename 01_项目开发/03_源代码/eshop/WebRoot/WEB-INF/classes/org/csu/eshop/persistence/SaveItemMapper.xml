@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.csu.eshop.persistence.SaveItemMapper">
+
+  <cache />
+
+<select id="getSaveItemListByUserName" parameterType="string" resultType="SaveItem">
+select *
+from saveitem
+where username = #{userName}
+
+</select>
+<insert id="insertSaveItem" parameterType="SaveItem">
+insert into saveitem
+	(username,productId,productname)
+values
+	(#{userName},#{producId},#{productName})
+</insert>
+
+<delete id="delectSaveItemBySaveItemId" parameterType="int">
+delete from saveitem
+where saveitemid = #{saveItemId}
+</delete>
+
+<delete id="delectSaveItemByUserName" parameterType="string">
+delete from saveitem
+where username = #{username}
+</delete>
+
+</mapper>
